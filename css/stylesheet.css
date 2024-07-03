@@ -130,12 +130,18 @@ opacity: 0;
   left: 5%;
   font-size: 5rem;
 }
-.main img {
+.imginner {
   position: relative;
   max-width: 1000px;
-  height: auto;
+  height: 600px;
   left: 55%;
   margin-top: 70px;
+} 
+.imginner img{
+  width: 1000px;
+  height: 600px;
+  object-position: center;
+  object-fit: cover;
 } 
 .right {
   position: relative;
