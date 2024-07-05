@@ -122,110 +122,27 @@ opacity: 0;
 .main-inner {
   width: 100%;
   height: auto;
+  position: relative;
 }
 .maintitle {
   position: absolute;
   color: #000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 6%;
+  margin: auto;
   top: 110px;
-  left: 5%;
-  font-size: 5rem;
+  font-size: 4rem;
 }
-.imginner {
-  position: relative;
-  max-width: 1000px;
-  height: 600px;
-  left: 55%;
-  margin-top: 70px;
-} 
-.imginner img{
-  width: 1000px;
-  height: 600px;
-  object-position: center;
-  object-fit: cover;
-} 
-.right {
-  position: relative;
-  max-width: 1440px;
+.main-inner img{
+  position: absolute;
+  width: 80%;
   height: auto;
+  left: 17%;
+  top: 110px;
 } 
 
-/* .clock-inner {
-  position: absolute;
-  top: 59%;
-  right: 43%;
-}
-.clock {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: solid 2px silver;
-  background-color: #fff;
-}
-.clock::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 8px);
-  left: calc(50% - 8px);
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  background-color: silver;
-}
-.dials {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.dials > div {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 3px);
-  width: 6px;
-  height: 50%;
-  transform-origin: bottom;
-}
-.dials > div::after {
-  position: absolute;
-  top: 0;
-  content: "";
-  width: 3px;
-  height: 15px;
-  background-color: silver;
-}
-
-.dials div:nth-child(1) { transform: rotate(30deg); }
-.dials div:nth-child(2) { transform: rotate(60deg); }
-.dials div:nth-child(3) { transform: rotate(90deg); }
-.dials div:nth-child(4) { transform: rotate(120deg); }
-.dials div:nth-child(5) { transform: rotate(150deg); }
-.dials div:nth-child(6) { transform: rotate(180deg); }
-.dials div:nth-child(7) { transform: rotate(210deg); }
-.dials div:nth-child(8) { transform: rotate(240deg); }
-.dials div:nth-child(9) { transform: rotate(270deg); }
-.dials div:nth-child(10) { transform: rotate(300deg); }
-.dials div:nth-child(11) { transform: rotate(330deg); }
-.dials div:nth-child(12) { transform: rotate(360deg); }
-
-.hand {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  background-color: silver;
-  transform-origin: 50% 100%;
-}
-.hour.hand {
-  width: 6px;
-  height: 50px;
-}
-.minute.hand {
-  width: 4px;
-  height: 100px;
-}
-.second.hand {
-  width: 2px;
-  height: 90px;
-} */
 
 .about {
   width: 100%;
@@ -425,3 +342,4 @@ footer li {
   margin: 20px 0;
   text-align: left;
 }
+
