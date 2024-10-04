@@ -4,10 +4,15 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <meta charset="utf-8">
     <title>NEKOSUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
   <body>
@@ -17,7 +22,7 @@
         <h1 class="title"><a href="index.html">NEKOSUI</a></h1>
           <ul class="g-nav-list">
             <li><a href="index.html">TOP</a></li> 
-            <li><a href="#product">PRODUCT</a></li> 
+            <li><a href="products.html">PRODUCT</a></li> 
             <li><a href="q&a.html">Q&A</a></li>
             <li><a href="contact.html">CONTACT</a></li> 
           </ul>
@@ -31,9 +36,7 @@
         <div id="spg-nav-list">
           <ul>
             <li><a href="index.html">TOP</a></li> 
-            <li><a href="#product">PRODUCT</a></li> 
-                <a href=""><p class="p3">Fragrance Ball</p></a>
-                <a href=""><p class="p4">Perfume</p></a>
+            <li><a href="products.html">PRODUCT</a></li> 
             <li><a href="q&a.html">Q&A</a></li>
             <li><a href="contact.html">CONTACT</a></li> 
           </ul>
@@ -49,23 +52,83 @@
     <div class="main1"><img src="images/main1.png"></div>
   </div>
 
-    <!-- <div class="about">
-      <div class="about-inner">
-        <div class="text-box">
-          <h2 class="abouttitle">ABOUT</h2>
-          <p class="about-p">
-            これは架空のwebサイトです。<br>
-            実在するものとは一切関係ありません。</p>
-          <div class="about-bottn">
-            <a href="abot.html" class="btnarrow5">ABOUTページへ</a>
+  <div id="about">
+    <div class="text">
+      <div class="aboutbox">
+        <h3 class="title">ABOUT</h3>
+        <p>私たちの香水ブランドへようこそ。私たちは、香りを通じて感情や思い出を呼び起こす特別な体験を提供することを目指しています。私たちの香水は、自然の恵みとアートの融合からうまれた、唯一無二の作品です。
+          （このサイトは架空の商品を販売するWebサイトです）</p>
+          <div class="about-button">
+            <a href="about.html">ABOUT MORE</a>
           </div>
+      </div>
+      <div class="conceptbox">
+        <h3 class="title">CONSEPT</h3>
+        <p>私たちの香水ブランドへようこそ。私たちは、香りを通じて感情や思い出を呼び起こす特別な体験を提供することを目指しています。私たちの香水は、自然の恵みとアートの融合からうまれた、唯一無二の作品です。
+          （このサイトは架空の商品を販売するWebサイトです）</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="products">
+    <h3 class="item">PRODUCTS</h3>
+    <div class="inner">
+      <div class="fragrance">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/fragrance1.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/fragrance1.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/fragrance1.png">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="fragrance-ditail">
+          <h4>Fragrance Ball</h4>
+          <p>「猫の香りが持ち運べる」アロマ雑貨です。<br>
+              五種類の猫の香りを展開しており、いつでもどこでも飼い猫の匂いを楽しみ、癒されることができます。<br>
+              継続時間はおよそ1週間から数週間香りが続き、楽しむことができます。
+          </p>
         </div>
       </div>
-    </div> -->
-
-  <!-- <div class="product">
-    <div class="product-inner"></div>
-  </div> -->
+      <div class="perfume">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/fragrance1.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/fragrance1.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/fragrance1.png">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="fragrance-ditail">
+          <h4>Perfume</h4>
+          <p>「猫の香りがする練り香水です。<br>
+              五種類の猫の香りを展開しており、時間が経っても香りが変化せず最後まで楽しむことができます。<br>
+              継続時間はおよそ2時間から3時間ほど香りが持続し、使用期限は1年程度となります。
+          </p>
+        </div>
+      </div>
+      <div class="products-btn">
+        <a href="products.html">VIEW MORE</a>
+      </div>
+      </div>
+    </div>
+  </div>
 
   <div id="qa">
     <div class="qa-inner">
@@ -99,7 +162,7 @@
         <div class="footer-list">
           <ul>
             <li><a href="index.html">TOP</a></li> 
-            <li><a href="abot.html">ABOUT</a></li> 
+            <li><a href="about.html">ABOUT</a></li> 
             <li><a href="#product">PRODUCT</a>
                 <a href="fragranceball.html"><p class="p1">Fragrance Ball</p></a>
                 <a href="perfume.html"><p class="p2">Perfume</p></a>
@@ -124,6 +187,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
   <script src="js/test.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
   </body>
 </html>

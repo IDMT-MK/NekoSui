@@ -61,84 +61,76 @@ header {
     display: none;
 }
 
-#q-a {
-    display: block;
-    background-color: #fff;
+.product {
+  background-color: #fff;
 }
-.q-ainner {
-    padding: 125px 50px 100px 50px;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
+.product-inner {
+  max-width: 1082px;
+  margin: 0 auto;
+  padding-bottom: 150px;
 }
-.q-atitle {
-    font-family: "Jost", sans-serif;
-    letter-spacing: 5px;
-    font-size: 27px;
-    margin-bottom: 30px;
-    font-weight: 400;
+.product-fragrance {
+  font-family: "Jost", sans-serif;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 100px 0 50px 0;
 }
-.summary {
-    position: relative;
-    display: block;
-    padding: 20px 10px 20px 30px;
-    cursor: pointer;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #fff;
-    transition: 0.2s;
-
-    &:hover {
-      background-color: #e6e6e6;
-    }
-    &::-webkit-details-marker {
-      display: none;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 50%;
-      transform: translateY(-50%);
-      transition:0.2s;
-      right: 1em;
-      width: 1em;
-      height: 1em;
-      background:url('../images/qabuttn.svg') no-repeat center / contain;
-    }
+.fragrance {
+  width: 100%;
+  height: auto;
+  position:relative;
 }
-.details {
-    text-align: left;
-    border-top: #000 solid 1px;
+ .border {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+ }
+.border span{
+  width: 90%;
+  height: 1px;
+  display: inline-block;
+  background-color: #000;
+  margin: 100px 0;
 }
-.details:last-of-type {
-    text-align: left;
-    border-top: #000 solid 1px;
-    border-bottom: #000 solid 1px;
+.producttitle {
+  font-family: "Jost", sans-serif;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-left: 30px;
 }
-.details + .details{
-    margin-top:0;
-    border-top: #000 solid 1px;
+.item {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 50px 30px 0 30px;
 }
-.details[open] {
-    .summary {
-      background-color: #fff;
-  
-      &:before {
-        transform: translateY(-50%) rotate(90deg);
-      }
-    }
-    .content {
-      animation: fadeIn 0.5s ease;
-    }
+.item li img {
+  max-width: 366px;
+  width: 100%;
+  height: auto;
 }
-.details-content {
-    padding: 10px 10px 20px 50px;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 14px;
+.itemname {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
-
+.price {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  width: 62%;
+  margin: 0 auto;
+  padding: 5px 0;
+  border-radius: 60px;
+}
+.price  span {
+  font-size: 15px;
+}
 
 .footer-inner {
     width: 100%;
@@ -394,6 +386,24 @@ header {
       letter-spacing: 5px;
       color: #000;
     }
+
+    .itemname {
+      font-family: "Jost", sans-serif;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .border span{
+      margin: 70px 0;
+    }
+    .price {
+      font-family: "Jost", sans-serif;
+      font-size: 11px;
+      padding: 5px 0;
+      border-radius: 60px;
+    }
+    .price  span {
+      font-size: 9px;
+    }
   
     .footer-inner {
       display: block;
@@ -412,6 +422,8 @@ header {
     }
     .footer-list ul {
       display: block;
+      width: 100px;
+      margin-left: 10%;
     }
     .footer-list li {
       margin-bottom: 20px;
@@ -429,5 +441,22 @@ header {
     }
     .nav-title1 {
       display: none;
+    }
+    .sns {
+      margin-left: 10%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .item {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 30px 30px 0 30px;
+    }
+    .item li img {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
     }
   }

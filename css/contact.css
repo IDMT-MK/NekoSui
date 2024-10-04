@@ -273,26 +273,6 @@ label.error {
       list-style: none;
       text-align: left;
     }
-    .p3{
-      list-style: none;
-      text-align: left;
-      margin: 0 0 0 15px;
-      color: #000;
-      font-family: "Jost", sans-serif;
-    }
-    .p3::before{
-      content: '・';
-    }
-    .p4{
-      list-style: none;
-      text-align: left;
-      margin: 10px 0 15px 15px;
-      color: #000;
-      font-family: "Jost", sans-serif;
-    }
-    .p4::before{
-      content: '・';
-    }
     #spg-nav li a{
       font-family: "Jost", sans-serif;
       color: #333;
