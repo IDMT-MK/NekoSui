@@ -8,4 +8,3 @@ $("#g-nav a").click(function () {
     $("#spg-nav").removeClass('panelactive');
 });
 
-

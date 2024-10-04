@@ -146,6 +146,8 @@ img {
   padding: 50px;
   position: relative;
   overflow: hidden;
+  margin-left: inherit !important; 
+  margin-right: inherit !important;
 }
 .swiper-slide {
   background-position: center;
@@ -223,6 +225,9 @@ img {
   border-radius: 50px;
   z-index:0;
   overflow: hidden;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 .products-btn {
   display: block;
@@ -294,6 +299,9 @@ img {
   border-radius: 50px;
   z-index:0;
   overflow: hidden;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 .qa-button a:before {
   content: url(../images/arrow.png);
@@ -372,6 +380,9 @@ img {
   border-radius: 50px;
   z-index:0;
   overflow: hidden;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 .contact-button a:before {
   content: url(../images/arrow.png);
@@ -422,7 +433,7 @@ img {
 
 .footer-nav{
   gap: 160px;
-  padding: 100px 0;
+  padding: 100px 10px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -466,12 +477,50 @@ img {
 }
 
 
+@media screen and (max-width: 1060px) { 
+  .footer-inner {
+    display: block;
+    padding-bottom: 50px;
+  }
+  .contact {
+    width: 100%;
+  }
+  .footer-nav {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-list {
+    margin-left: 20%;
+  }
+  .footer-list ul {
+    display: block;
+    width: 100px;
+    margin-left: 10%;
+  }
+  .footer-list li {
+    margin-bottom: 20px;
+  }
+  .p1{
+    margin-top: 5px;
+  }
+  .nav-title2 {
+    display: block;
+    text-align: center;
+    margin: 50px 0 25px 0;
+    font-size: 32px;
+    font-family: "Fredoka", sans-serif;
+    letter-spacing: 5px;
+  }
+  .nav-title1 {
+    display: none;
+  }
+  .sns {
+    margin-left: 10%;
+  }
+}
 
 @media screen and (max-width: 960px) {
-  .main{
-    padding-top: 0;
-    height: 70vh;
-  } 
   .maintitle {
     top: 35%;
     left: 50%;
@@ -627,6 +676,9 @@ img {
   }
   .swiper-pagination {
     top: 50px;
+  }
+  .swiper-pagination {
+    top: 580px !important;
 }
 
   .qatext-box {
@@ -634,45 +686,11 @@ img {
     display: inline-block;
     margin-left: -10%;
   }
+}
 
-  .footer-inner {
-    display: block;
-    padding-bottom: 50px;
-  }
-  .contact {
-    width: 100%;
-  }
-  .footer-nav {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .footer-list {
-    margin-left: 20%;
-  }
-  .footer-list ul {
-    display: block;
-    width: 100px;
-    margin-left: 10%;
-  }
-  .footer-list li {
-    margin-bottom: 20px;
-  }
-  .p1{
-    margin-top: 5px;
-  }
-  .nav-title2 {
-    display: block;
-    text-align: center;
-    margin: 50px 0 25px 0;
-    font-size: 32px;
-    font-family: "Fredoka", sans-serif;
-    letter-spacing: 5px;
-  }
-  .nav-title1 {
-    display: none;
-  }
-  .sns {
-    margin-left: 10%;
+@media screen and (max-width: 720px) { 
+  .main {
+    padding-top: 0;
+    height: 70vh;
   }
 }
