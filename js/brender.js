@@ -7,13 +7,15 @@ var NEAR       = 1;
 var FAR        = 1000;
 var MODEL      = '3d/test.blb';
 
+
 // MAIN
 window.onload = function(){
 
 	// RENDER
 	var renderer = new THREE.WebGLRenderer( { antialias: true } );
 	renderer.setSize( WIDTH, HEIGHT );
-	document.body.appendChild( renderer.domElement );
+	const canvas = document.querySelector('#main_canvas');
+	canvas.appendChild( renderer.domElement );
 	
 	// SCENE
 	var scene = new THREE.Scene();
