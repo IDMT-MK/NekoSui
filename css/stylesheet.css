@@ -12,7 +12,7 @@ scroll-behavior: smooth;
 body {
   margin: 0 auto;
   position: relative;
-  background: #f5f3eb;
+  background: #fff;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 990;
 }
 
 .main{
@@ -39,7 +39,7 @@ img {
 .maintitle {
   width: 60%;
   position: fixed;
-  top: 50%;
+  top: 47%;
   min-width: 400px;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
@@ -87,13 +87,19 @@ img {
   margin: 0 50px;
   height: inherit;
 }
-.title {
-  margin-top: 11px;
+.title{
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-family: "Jost", sans-sesrif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 5px;
 }
 .title a{
   font-family: "Fredoka", sans-serif;
   letter-spacing: 5px;
   color: #000;
+  font-weight: 400;
 }
 .g-nav-list {
   display: flex;
@@ -106,6 +112,10 @@ img {
   font-family: "Jost", sans-serif;
   color: #000;
   letter-spacing: 5px;
+}
+.g-nav-list a:hover{
+  color: #ff3f14;
+  transition: 0.3s;
 }
 .spheader {
   display: none;
@@ -132,6 +142,7 @@ img {
   top: 0px;
   left: 0px;
   z-index: 1;
+  height: 100%;
 }
 .aboutbox {
   max-width: 400px;
@@ -152,7 +163,7 @@ img {
   letter-spacing: 5px;
   font-size: 14px;
 }
-.title {
+.about title {
   font-family: "Jost", sans-serif;
   letter-spacing: 5px;
   font-size: 20px;
@@ -164,6 +175,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   max-width: 240px;
   padding: 15px 30px 15px 0px;
   color: #313131;
@@ -180,7 +192,7 @@ img {
 }
 .about-button {
   display: block;
-  margin-top: 40px;
+  margin-top: 150px;
 }
 .about-button a:before {
   content: url(../images/arrow.png);
@@ -192,25 +204,28 @@ img {
   border-radius: 60px;
   z-index: 2;
 }
-/* .qa-button a:after {
+.about-button a:after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   width: 0;
   display: block;
-  background: #ccc;
+  background: #e2e2e2;
   transition: .3s;
   left:0;
-} */
+}
 .about-button a:hover:after {
   width: 100%;
   z-index: -1;
 }
 
 #products {
-  background-color: #ECECEC;
-  padding: 300px 0 80px 0;
+  background-color: #FAFAFA;
+  padding: 400px 0 0px 0;
+  background-image: linear-gradient(90deg, #79aee74a 1px, transparent 1px), linear-gradient(#79aee74a 1px, transparent 1px);
+  background-position: 10px 10px;
+  background-size: 20px 20px;
 }
 .item {
   text-align: center;
@@ -336,20 +351,48 @@ img {
   border-radius: 60px;
   z-index: 2;
 }
-/* .qa-button a:after {
+.products-btn a:after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   width: 0;
   display: block;
-  background: #ccc;
+  background: #e2e2e2;
   transition: .3s;
   left:0;
-} */
+}
 .products-btn a:hover:after {
   width: 100%;
   z-index: -1;
+}
+.bbs{
+  align-items: center;
+  display: flex;
+  height: 150px;
+  line-height: 40px;
+  overflow:hidden;
+  width: 100%;
+  white-space:nowrap;
+  margin-top: 80px;
+  z-index: 1;
+}
+.bbs ul {
+  animation: flowing 40s linear infinite;
+  font-family: "Jost", sans-serif;
+  font-size: 150px;
+  font-weight: 900;
+  transform: translateX(100%);
+  margin: 0;
+  padding: 0;
+}
+.bbs ul li{
+  display: inline-block;
+  padding-right: 10px;
+}
+@keyframes flowing {
+  0% { transform:translateX(0); }
+  100% { transform:translateX(-100%); }
 }
 
 #qa {
@@ -359,7 +402,7 @@ img {
   background-color: #fff;
   width: 100%;
   text-align: center;
-  padding: 50px 0;
+  padding: 80px 0;
   margin: 0 auto;
 }
 .qatext-box {
@@ -406,17 +449,17 @@ img {
   border-radius: 60px;
   z-index: 2;
 }
-/* .qa-button a:after {
+.qa-button a:after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   width: 0;
   display: block;
-  background: #ccc;
+  background: #e2e2e2;
   transition: .3s;
   left:0;
-} */
+}
 .qa-button a:hover:after {
   width: 100%;
   z-index: -1;
@@ -425,13 +468,13 @@ img {
 .footer-inner {
   width: 100%;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #205375;
   gap: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .contact {
-  background-color: #c7c7c7;
+  background-color: #1E3E62;
   border-radius: 0 80px 0 0;
   text-align: center;
 }
@@ -450,12 +493,14 @@ img {
   letter-spacing: 5px;
   font-size: 20px;
   margin-bottom: 20px;
+  color: #fff;
 }
 .contact-text {
   font-size: 14px;
   margin-bottom: 40px;
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 2px;
+  color: #fff;
 }
 .contact-button a {
   position: relative;
@@ -478,26 +523,27 @@ img {
   font-weight: 400;
 }
 .contact-button a:before {
-  content: url(../images/arrow.png);
+  content: url(../images/Arrow2.png);
   transform: scale(0.5);
   position: absolute;
   right: -17px;
-  background: #000;
+  background: #D8FF6D;
   padding: 30px 30px 25px 30px;
   border-radius: 60px;
   z-index: 2;
+  border: 1px solid #000;
 }
-/* .contact-button a:after {
+.contact-button a:after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   width: 0;
   display: block;
-  background: #ccc;
+  background: #e2e2e2;
   transition: .3s;
   left:0;
-} */
+}
 .contact-button a:hover:after {
   width: 100%;
   z-index: -1;
@@ -549,7 +595,7 @@ img {
   font-size: 12px;
 }
 .footer-list li a{
-  color: #000;
+  color: #fff;
   font-family: "Jost", sans-serif;
 }
 .nav-title1 {
@@ -558,6 +604,7 @@ img {
   margin: 0px 0 25px 0;
   font-size: 36px;
   display: block;
+  color: #fff;
 }
 .nav-title2 {
   display: none;
@@ -567,6 +614,7 @@ img {
   font-family: "Noto Sans", sans-serif;
   text-align: center;
   padding: 20px 0;
+  background-color: #fff;
 }
 
 
@@ -574,6 +622,7 @@ img {
   .footer-inner {
     display: block;
     padding-bottom: 50px;
+    border-radius: 0 80px 0 0;
   }
   .contact {
     width: 100%;
@@ -615,7 +664,7 @@ img {
 
 @media screen and (max-width: 960px) {
   .maintitle {
-    top: 35%;
+    top: 40%;
     left: 50%;
     width: 80%;
     min-width: 300px;
@@ -788,6 +837,6 @@ img {
 @media screen and (max-width: 720px) { 
   .main {
     padding-top: 0;
-    height: 70vh;
+    height: 75vh;
   }
 }

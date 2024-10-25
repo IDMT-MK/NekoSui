@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <meta charset="utf-8">
     <meta charset="utf-8">
     <title>NekoSui</title>
 
@@ -11,6 +13,19 @@
   </head>
 
   <body>
+
+    <div id="loading">
+      <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Loading</span>
+      </div>
+    </div>
+    
     <header>
       <div class="pcheader">
         <nav id="g-nav">
@@ -38,50 +53,56 @@
           </div>
         </nav>
       </div>
-     </header>
+      </header>
 
-     <div class="product">
-      <div class="product-fragrance">PRODUCTS</div>
-      <div class="product-inner">
-        <div class="fragrance">
-          <div class="producttitle">FragranceBall</div>
-          <ul class="item">
-            <li><a href="item.html"><img src="images/munchikan1.png"></a>
+      <div class="product">
+        <div class="product-fragrance">PRODUCTS</div>
+        <div class="product-inner">
+          <div class="fragrance">
+            <div class="producttitle">FragranceBall</div>
+            <ul class="item">
+              <li><a href="item.html"><img src="images/munchikan1.png"></a>
+                  <p class="itemname">Munchkin</p>
+                  <p class="price">¥500<span>/税込</span></p>
+                  <a href="item.html"><p class="guidance">BUY NOW</p></a>
+              </li>
+              <li><a href="item2.html"><img src="images/suco1.png"></a>
                 <p class="itemname">Scottish Fold</p>
-                <a href="item.html"><p class="price">¥500<span>/税込</span></p></a>
-            </li>
-            <li><a href=""><img src="images/suco1.png"></a>
-              <p class="itemname">Munchkin</p>
-              <a href=""><p class="price">¥500<span>/税込</span></p></a>
-            </li>
-            <li><a href=""><img src="images/japanesecat1.png"></a>
-              <p class="itemname">Japanese Cats</p>
-              <a href=""><p class="price">¥500<span>/税込</span></p></a>
-            </li>
-          </ul>
-        </div>
-        <div class="border"><span></span></div>
-        <div class="perfume">
-          <div class="producttitle">Perfume</div>
-          <ul class="item">
-            <li><a href=""><img src="images/munchikan2.png"></a>
-              <p class="itemname">Scottish Fold</p>
-              <a href=""><p class="price">¥500<span>/税込</span></p></a>
-            </li>
-            <li><a href=""><img src="images/suco2.png"></a>
-              <p class="itemname">Munchkin</p>
-              <a href=""><p class="price">¥500<span>/税込</span></p></a>
-            </li>
-            <li><a href=""><img src="images/japanesecat2.png"></a>
-              <p class="itemname">Japanese Cats</p>
-              <a href=""><p class="price">¥500<span>/税込</span></p></a>
-            </li>
-          </ul>
+                <p class="price">¥500<span>/税込</span></p>
+                <a href="item2.html"><p class="guidance">BUY NOW</p></a>
+              </li>
+              <li><a href="item3.html"><img src="images/japanesecat1.png"></a>
+                <p class="itemname">Japanese Cats</p>
+                <p class="price">¥500<span>/税込</span></p>
+                <a href="item3.html"><p class="guidance">BUY NOW</p></a>
+              </li>
+            </ul>
+          </div>
+          <div class="border"><span></span></div>
+          <div class="perfume">
+            <div class="producttitle">Perfume</div>
+            <ul class="item">
+              <li><a href="item4.html"><img src="images/munchikan2.png"></a>
+                <p class="itemname">Munchkin</p>
+                <p class="price">¥500<span>/税込</span></p>
+                <a href="item4.html"><p class="guidance">BUY NOW</p></a>
+              </li>
+              <li><a href="item5.html"><img src="images/suco2.png"></a>
+                <p class="itemname">Scottish Fold</p>
+                <p class="price">¥500<span>/税込</span></p>
+                <a href="item5.html"><p class="guidance">BUY NOW</p></a>
+              </li>
+              <li><a href="item6.html"><img src="images/japanesecat2.png"></a>
+                <p class="itemname">Japanese Cats</p>
+                <p class="price">¥500<span>/税込</span></p>
+                <a href="item6.html"><p class="guidance">BUY NOW</p></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-     </div>
 
-     <footer>
+    <footer>
         <div class="footer-inner">
           <div class="contact">
             <div class="contact-inner">
@@ -125,4 +146,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
     <script src="js/test.js"></script>
+    <script src="js/loading.js"></script>
 </html>
