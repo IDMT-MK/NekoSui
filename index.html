@@ -32,21 +32,18 @@
       </div>
     </div>
 
-   <header>
-    <div class="pcheader">
-      <nav id="g-nav">
-        <h1 class="title"><a href="index.html">NEKOSUI</a></h1>
-          <ul class="g-nav-list">
-            <li><a href="index.html">TOP</a></li> 
-            <li><a href="products.html">PRODUCT</a></li> 
-            <li><a href="q&a.html">Q&A</a></li>
-            <li><a href="contact.html">CONTACT</a></li> 
-          </ul>
-      </nav>
+<!-- <div class="modal js-modal">
+  <div class="modal-container">
+    <div class="modal-close js-modal-close">×</div>
+    <div class="modal-content">
+      <p>開きました。</p>
     </div>
+  </div>
+</div> -->
+
+   <header>
 
     <div class="spheader">
-      <h1 class="sptitle"><a href="index.html">NEKOSUI</a></h1>
     <div class="openbtn"><span></span><span></span><span></span></div>
       <nav id="spg-nav">
         <div id="spg-nav-list">
@@ -62,33 +59,43 @@
    </header>
 
    <div class="main">
-    <div class="main2"><img src="images/main2.png"></div>
-    <div class="box-bg"></div>
+    <div class="catimg">
+      <div class="main-img1"><img src="images/jp1.png"></div>
+      <div class="main-img2"><img src="images/sc1.png"></div>
+    </div>
     <div class="maintitle"><img src="images/maintitle.png"></div>
-    <div class="main1"><img src="images/main1.png"></div>
   </div>
 
 
   <div id="about">
-    <div class="text">
-      <div class="aboutbox">
-        <h3 class="title">ABOUT</h3>
-        <p>私たちの香水ブランドへようこそ。私たちは、香りを通じて感情や思い出を呼び起こす特別な体験を提供することを目指しています。私たちの香水は、自然の恵みとアートの融合からうまれた、唯一無二の作品です。
-          （このサイトは架空の商品を販売するWebサイトです）</p>
-          <div class="about-button">
-            <a href="about.html">ABOUT MORE</a>
-          </div>
+    <div class="aboutbox">
+      <div class="title">私たちの香水ブランドへ<br class="brsp">ようこそ</div>
+      <p>「NEKOSUI」は、猫の魅力と個性を引き立てるために特別にデザインされた香水ブランドです。<br>
+        猫はそれぞれ異なる性格や好みを持っており、その多様性を香りで表現します。<br>
+        私たちの香水は、猫の愛らしさや神秘的な雰囲気を感じさせる香りを厳選し、猫と離れていても猫の匂いで癒しを提供します。<br>
+      </p>
+      <div class="atensstion">（このサイトは架空の商品を販売するWebサイトです）</div>
+      <div class="about-btn-pa">
+        <div class="about-button">
+          <a href="about.html">ABOUT MORE</a>
+        </div>
       </div>
-      <div class="conceptbox">
-        <h3 class="title">CONSEPT</h3>
-        <p>私たちの香水ブランドへようこそ。私たちは、香りを通じて感情や思い出を呼び起こす特別な体験を提供することを目指しています。私たちの香水は、自然の恵みとアートの融合からうまれた、唯一無二の作品です。
-          （このサイトは架空の商品を販売するWebサイトです）</p>
-      </div>
-    </div>
-    <div id="main_canvas">
-      <canvas id="myCanvas"></canvas>
     </div>
   </div>
+
+  <div id="catfoto">
+    <img class="fot1" src="images/foto1.jpg">
+    <img class="fot2" src="images/foto2.jpg">
+    <div class="cat-textbox">
+      <h4>リアルな猫の匂い！</h4>
+      <p>本物の猫のような匂いと可愛らしい見た目で、<br>
+        どんな時でもあなたに癒しを届けます</p>
+    </div>
+  </div>
+
+    <!-- <div id="main_canvas">
+    <canvas id="myCanvas"></canvas>
+  </div> -->
 
   <div id="products">
     <h3 class="item">PRODUCTS</h3>
@@ -99,13 +106,13 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="images/munchikan1.png">
+                  <img src="images/pr-mc1.png">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/suco1.png">
+                  <img src="images/pr-sc1.png">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/japanesecat1.png">
+                  <img src="images/pr-jp1.png">
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -115,9 +122,16 @@
             <div class="fragrance-ditail">
               <h4>Fragrance Ball</h4>
               <p>「猫の香りが持ち運べる」アロマ雑貨です。<br>
-                  5種類の猫の香りを展開しており、いつでもどこでも飼い猫の匂いを楽しみ、癒されることができます。<br>
-                  継続時間はおよそ1週間から数週間香りが続き、楽しむことができます。
+                  3種類の猫の香りを展開しており、いつでもどこでも飼い猫の匂いを楽しみ、癒されることができます。<br>
               </p>
+              <div class="ditail-img">
+                <div class="grid"><img src="images/prmi-mc1.png"></div>
+                <div class="grid"><img src="images/prmi-mc1.png"></div>
+                <div class="grid"><img src="images/prmi-jc1.png"></div>
+              </div>
+              <div class="products-btn">
+                <a href="products.html">VIEW MORE</a>
+              </div>
             </div>
           </div>
         </div>
@@ -128,13 +142,13 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="images/munchikan2.png">
+                  <img src="images/pr-mc2.png" class="aligncenter">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/suco2.png">
+                  <img src="images/pr-sc2.png" class="aligncenter">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/japanesecat2.png">
+                  <img src="images/pr-jp2.png" class="aligncenter">
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -144,37 +158,66 @@
             <div class="fragrance-ditail">
               <h4>Perfume</h4>
               <p>「猫の香りがする練り香水です。<br>
-                  5種類の猫の香りを展開しており、時間が経っても香りが変化せず最後まで楽しむことができます。<br>
-                  継続時間はおよそ2時間から3時間ほど香りが持続し、使用期限は1年程度となります。
+                  3種類の猫の香りを展開しており、時間が経っても香りが変化せず最後まで楽しむことができます。<br>
               </p>
+              <div class="ditail-img">
+                <div class="grid"><img src="images/prmi-mc2.png" class="aligncenter2"></div>
+                <div class="grid"><img src="images/prmi-sc2.png" class="aligncenter2"></div>
+                <div class="grid"><img src="images/prmi-jc2.png" class="aligncenter2"></div>
+              </div>
+              <div class="products-btn">
+                <a href="products.html">VIEW MORE</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="products-btn">
-        <a href="products.html">VIEW MORE</a>
+    </div>
+    <div class="bbs">
+      <ul>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+      </ul>
+      <ul>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+        <li>NEKOKAWAII!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="feature">
+    <div class="ft-inner">
+      <div class="f1">
+        <img src="images/fe1.png">
+        <div>
+          <h4>天然成分の使用</h4>
+        <p>全ての製品は、天然由来の成分を使用しており、<br>
+          化学物質を極力排除しています。これにより、<br>
+          より安心して使用できる製品を提供しています。
+        </p>
+        </div>
       </div>
-      <div class="bbs">
-        <ul>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-        </ul>
-        <ul>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-          <li>NEKOKAWAII!</li>
-        </ul>
+      <div class="f1">
+        <img src="images/fe2.png">
+        <div>
+          <h4>エコフレンドリーなパッケージ</h4>
+        <p>環境に配慮したリサイクル可能なパッケージを<br>
+          使用しており、持続可能な製品作りを目指しています。<br>
+          これにより、環境保護にも貢献しています。
+        </p>
+        </div>
       </div>
     </div>
   </div>
@@ -186,7 +229,9 @@
         <div class="qa-text">よくあるご質問はこちらから</div>
       </div>
       <div class="qa-button">
-        <a href="q&a.html">VIEW MORE</a>
+        <div class="about-button">
+          <a href="q&a.html">VIEW MORE</a>
+        </div>
       </div>
     </div>
   </div>
@@ -201,7 +246,9 @@
             <div class="contact-text">お問い合わせはこちらから</div>
           </div>
           <div class="contact-button">
-            <a href="contact.html">CONTACT US</a>
+            <div class="about-button">
+              <a href="contact.html">CONTACT US</a>
+            </div>
           </div>
         </div>
       </div>

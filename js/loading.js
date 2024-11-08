@@ -6,3 +6,5 @@ function animation(){
 
 // window.addEventListener('load', animation);
 window.setTimeout( animation, 250);
+
+

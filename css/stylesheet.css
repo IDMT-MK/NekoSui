@@ -1,688 +1,67 @@
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0 auto;
-  position: relative;
-  background: #fff;
+    margin: 0 auto;
+    background: #FFF9F0;
 }
 
 header {
-  display: grid;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  z-index: 990;
+    display: grid;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 990;
 }
 
 .main{
-  width:100%;
-  height: 100vh;
-  position: relative;
-  background-color: #1414ff;
-  z-index: -2;
-  padding-top: 100px;
+    width:100%;
+    height: calc(100% - 10px);
+    position: relative;
+    background-color: #FFF9F0;
+    z-index: -2;
+    padding-top: 100px;
 } 
 img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 .maintitle {
-  width: 60%;
-  position: fixed;
-  top: 47%;
-  min-width: 400px;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  text-align: center;
-  z-index: -4;
-}
-.main2 {
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  bottom: 0;
-  max-width: 1200px;
-}
-.box-bg {
-  position: absolute;
-  bottom: 0;
-  background-color: #fff;
-  width: 100%;
-  height: 7%;
-  z-index: -1;
-}
-.main1 {
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  bottom: 0;
-  z-index: -3;
-  max-width: 1200px;
-}
-
-.pcheader {
-  display: block;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 0 auto;
-  border-radius: 60px;
-  border: 1px solid #000;
-}
-#g-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 50px;
-  height: inherit;
-}
-.title{
-  margin-top: 14px;
-  margin-bottom: 10px;
-  font-family: "Jost", sans-sesrif;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 5px;
-}
-.title a{
-  font-family: "Fredoka", sans-serif;
-  letter-spacing: 5px;
-  color: #000;
-  font-weight: 400;
-}
-.g-nav-list {
-  display: flex;
-  width: 430px;
-  align-items: center;
-  justify-content: space-between;
-  height: inherit;
-}
-.g-nav-list a{
-  font-family: "Jost", sans-serif;
-  color: #000;
-  letter-spacing: 5px;
-}
-.g-nav-list a:hover{
-  color: #ff3f14;
-  transition: 0.3s;
-}
-.spheader {
-  display: none;
-}
-
-#main_canvas {
-  position: sticky;
-  top: 0px; 
-  width: 1045px;
-  height: 900px;
-  top: 60px;
-  z-index: 0;
-}
-#about {
-  background-color: #fff;
-  width: 100%;
-  height: 1500px;
-  position: relative;
-}
-.text {
-  margin-left: 30%;
-  margin-top: 200px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  height: 100%;
-}
-.aboutbox {
-  max-width: 400px;
-  height: auto;
-}
-.aboutbox p{
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 14px;
-}
-.conceptbox {
-  max-width: 400px;
-  height: auto;
-  margin-top: 430px;
-}
-.conceptbox p{
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 14px;
-}
-.about title {
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-.about-button a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 240px;
-  padding: 15px 30px 15px 0px;
-  color: #313131;
-  transition: 0.3s ease-in-out;
-  font-weight: 600;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 50px;
-  z-index:0;
-  overflow: hidden;
-  font-family: "Jost", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.about-button {
-  display: block;
-  margin-top: 150px;
-}
-.about-button a:before {
-  content: url(../images/arrow.png);
-  transform: scale(0.5);
-  position: absolute;
-  right: -17px;
-  background: #000;
-  padding: 30px 30px 25px 30px;
-  border-radius: 60px;
-  z-index: 2;
-}
-.about-button a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  display: block;
-  background: #e2e2e2;
-  transition: .3s;
-  left:0;
-}
-.about-button a:hover:after {
-  width: 100%;
-  z-index: -1;
-}
-
-#products {
-  background-color: #FAFAFA;
-  padding: 400px 0 0px 0;
-  background-image: linear-gradient(90deg, #79aee74a 1px, transparent 1px), linear-gradient(#79aee74a 1px, transparent 1px);
-  background-position: 10px 10px;
-  background-size: 20px 20px;
-}
-.item {
-  text-align: center;
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 60px;
-}
-.fragrance {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  padding: 0 20px;
-}
-.perfume {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  padding: 160px 20px 0 20px;
-  margin-top: 100px;
-}
-.swiper {
-  width: 390px;
-  height: auto;
-  padding: 50px;
-  position: relative;
-  overflow: hidden;
-  margin-left: inherit !important; 
-  margin-right: inherit !important;
-}
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-.swiper-button-prev {
-  margin-left: 80px !important;
-}
-.swiper-button-next {
-  margin-right: 80px !important;
-}
-.swiper .swiper-button-next,.swiper .swiper-button-prev{
-  background-color: #fff !important;
-  border:  solid 1px #000 !important;
-  border-radius: 50% !important;
-  width: 50px !important;
-  height: 50px !important;
-  margin-top: 300px;
-}
-.swiper .swiper-button-next::after, .swiper .swiper-button-prev::after {
-  font-family: 'Font Awesome 5 Free' !important;
-  font-weight: 600 !important;
-  color: #000 !important;
-  font-size: 1.5rem !important;
-  left: 50px !important;
-}
-.swiper .swiper-button-next::after {
-  content: '\f054' !important;
-  margin-left: 3px !important;
-}
-.swiper .swiper-button-prev::after {
-  content: '\f053' !important;
-  margin-right: 3px !important;
-}
-.fragrance-ditail {
-  max-width: 630px;
-  max-height: 300px;
-  height: auto;
-  background-color: #fff;
-  border:  solid 1px #000;
-  border-radius: 50px;
-  margin-top: 70px;
-}
-.fragrance-ditail h4 {
-  margin: 10% 0% 3% 13%;
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 20px;
-}
-.fragrance-ditail p {
-  margin: 0 13% 0 12%;
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 14px;
-}
-.products-btn a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 240px;
-  padding: 15px 30px 15px 0px;
-  color: #313131;
-  transition: 0.3s ease-in-out;
-  font-weight: 600;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 50px;
-  z-index:0;
-  overflow: hidden;
-  font-family: "Jost", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.products-btn {
-  display: block;
-  margin-top: 150px;
-}
-.products-btn a:before {
-  content: url(../images/arrow.png);
-  transform: scale(0.5);
-  position: absolute;
-  right: -17px;
-  background: #000;
-  padding: 30px 30px 25px 30px;
-  border-radius: 60px;
-  z-index: 2;
-}
-.products-btn a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  display: block;
-  background: #e2e2e2;
-  transition: .3s;
-  left:0;
-}
-.products-btn a:hover:after {
-  width: 100%;
-  z-index: -1;
-}
-.bbs{
-  align-items: center;
-  display: flex;
-  height: 150px;
-  line-height: 40px;
-  overflow:hidden;
-  width: 100%;
-  white-space:nowrap;
-  margin-top: 80px;
-  z-index: 1;
-}
-.bbs ul {
-  animation: flowing 40s linear infinite;
-  font-family: "Jost", sans-serif;
-  font-size: 150px;
-  font-weight: 900;
-  transform: translateX(100%);
-  margin: 0;
-  padding: 0;
-}
-.bbs ul li{
-  display: inline-block;
-  padding-right: 10px;
-}
-@keyframes flowing {
-  0% { transform:translateX(0); }
-  100% { transform:translateX(-100%); }
-}
-
-#qa {
-  display: block;
-}
-.qa-inner {
-  background-color: #fff;
-  width: 100%;
-  text-align: center;
-  padding: 80px 0;
-  margin: 0 auto;
-}
-.qatext-box {
-  margin-bottom: 20px;
-}
-.qa-text {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-.qa-title {
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.qa-button a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 240px;
-  padding: 15px 30px 15px 0px;
-  color: #313131;
-  transition: 0.3s ease-in-out;
-  font-weight: 600;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 50px;
-  z-index:0;
-  overflow: hidden;
-  font-family: "Jost", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.qa-button a:before {
-  content: url(../images/arrow.png);
-  transform: scale(0.5);
-  position: absolute;
-  right: -17px;
-  background: #000;
-  padding: 30px 30px 25px 30px;
-  border-radius: 60px;
-  z-index: 2;
-}
-.qa-button a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  display: block;
-  background: #e2e2e2;
-  transition: .3s;
-  left:0;
-}
-.qa-button a:hover:after {
-  width: 100%;
-  z-index: -1;
-}
-
-.footer-inner {
-  width: 100%;
-  justify-content: space-between;
-  background-color: #205375;
-  gap: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.contact {
-  background-color: #1E3E62;
-  border-radius: 0 80px 0 0;
-  text-align: center;
-}
-.contact-inner{
-  padding: 100px 0;
-  text-align: center;
-  margin: 0 auto;
-}
-.contacttext-box {
-  text-align: left;
-	display: inline-block;
-  margin-left: -70px;
-}
-.contact-title {
-  font-family: "Jost", sans-serif;
-  letter-spacing: 5px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-.contact-text {
-  font-size: 14px;
-  margin-bottom: 40px;
-  font-family: "Noto Sans", sans-serif;
-  letter-spacing: 2px;
-  color: #fff;
-}
-.contact-button a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 240px;
-  padding: 15px 30px 15px 0px;
-  color: #313131;
-  transition: 0.3s ease-in-out;
-  font-weight: 600;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 50px;
-  z-index:0;
-  overflow: hidden;
-  font-family: "Jost", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.contact-button a:before {
-  content: url(../images/Arrow2.png);
-  transform: scale(0.5);
-  position: absolute;
-  right: -17px;
-  background: #D8FF6D;
-  padding: 30px 30px 25px 30px;
-  border-radius: 60px;
-  z-index: 2;
-  border: 1px solid #000;
-}
-.contact-button a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  display: block;
-  background: #e2e2e2;
-  transition: .3s;
-  left:0;
-}
-.contact-button a:hover:after {
-  width: 100%;
-  z-index: -1;
-}
-.sns {
-  display: flex;
-  margin-top: 80px;
-  margin-left: 20%;
-}
-.x {
-  background-color: #000;
-  color: #fff;
-  border-radius: 50px;
-  margin-right: 10px;
-  width: 40px;
-  text-align: center;
-}
-.insta {
-  background-color: #000;
-  color: #fff;
-  border-radius: 50px;
-  margin-right: 10px;
-  width: 120px;
-  text-align: center;
-}
-
-.footer-nav{
-  gap: 160px;
-  padding: 100px 10px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.footer-list ul {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  margin-left: 20%;
-}
-.footer-list li {
-  font-size: 14px;
-}
-.p1{
-  margin-top: 15px;
-  font-size: 12px;
-}
-.p2{
-  margin-top: 5px;
-  font-size: 12px;
-}
-.footer-list li a{
-  color: #fff;
-  font-family: "Jost", sans-serif;
-}
-.nav-title1 {
-  font-family: "Fredoka", sans-serif;
-  letter-spacing: 5px;
-  margin: 0px 0 25px 0;
-  font-size: 36px;
-  display: block;
-  color: #fff;
-}
-.nav-title2 {
-  display: none;
-}
-
-.copylight {
-  font-family: "Noto Sans", sans-serif;
-  text-align: center;
-  padding: 20px 0;
-  background-color: #fff;
-}
-
-
-@media screen and (max-width: 1060px) { 
-  .footer-inner {
-    display: block;
-    padding-bottom: 50px;
-    border-radius: 0 80px 0 0;
-  }
-  .contact {
     width: 100%;
-  }
-  .footer-nav {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .footer-list {
-    margin-left: 20%;
-  }
-  .footer-list ul {
-    display: block;
-    width: 100px;
-    margin-left: 10%;
-  }
-  .footer-list li {
-    margin-bottom: 20px;
-  }
-  .p1{
-    margin-top: 5px;
-  }
-  .nav-title2 {
-    display: block;
+    max-width: 1440px;
+    min-width: 327px;
     text-align: center;
-    margin: 50px 0 25px 0;
-    font-size: 32px;
-    font-family: "Fredoka", sans-serif;
-    letter-spacing: 5px;
-  }
-  .nav-title1 {
-    display: none;
-  }
-  .sns {
-    margin-left: 10%;
-  }
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    z-index: -4;
+}
+.catimg {
+    padding-top: clamp(1.25rem, -2.711rem + 16.9vw, 12.5rem);
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1100px;
+    height: auto;
+    gap: 15%;
+    display: flex;
+    margin: 0 auto;
 }
 
-@media screen and (max-width: 960px) {
-  .maintitle {
-    top: 40%;
-    left: 50%;
-    width: 80%;
-    min-width: 300px;
-  }
-  .main2 {
-    min-width: 300px;
-  }
-  .main1 {
-    min-width: 300px;
-  }
-
-  .pcheader {
-    display: none;
-  }
-  .spheader {
+.spheader {
     display: block;
-  }
-  #spg-nav{
+}
+#spg-nav{
     position:fixed;
     z-index: 999;
     top:0;
@@ -691,11 +70,11 @@ img {
     height: 100vh;
     background:#fff;
     transition: all 0.6s;
-  }
-  #spg-nav.panelactive{
+}
+#spg-nav.panelactive{
     right: 0;
-  }
-  #spg-nav.panelactive #spg-nav-list{
+}
+#spg-nav.panelactive #spg-nav-list{
     position: fixed;
     z-index: 999; 
     width: 100%;
@@ -703,19 +82,19 @@ img {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     text-align: center;
-  }
-  #spg-nav ul {
+}
+#spg-nav ul {
     position: absolute;
     z-index: 999;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-  }
-  #spg-nav li{
+}
+#spg-nav li{
     list-style: none;
     text-align: left;
-  }
-  #spg-nav li a{
+}
+#spg-nav li a{
     font-family: "Jost", sans-serif;
     color: #333;
     text-decoration: none;
@@ -723,120 +102,607 @@ img {
     display: block;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-  }
-  .openbtn{
+}
+.openbtn{
     display: block;
     position:fixed;
     z-index: 9999;
-    top:10px;
-    right: 10px;
+    top:40px;
+    right: 40px;
     cursor: pointer;
-    width: 50px;
-    height:50px;
+    width: 60px;
+    height:60px;
     background-color: #fff;
     border-radius: 50px;
     border: 1px solid #000;
-  }
-  .openbtn span{
+}
+.openbtn span{
     display: inline-block;
     transition: all .4s;
     position: absolute;
-    left: 14px;
+    left: 16px;
     height: 2px;
     border-radius: 2px;
     background-color: #000;
     width: 45%;
-  }
-  .openbtn span:nth-of-type(1) {
-  top:15px;	
-  }
-  .openbtn span:nth-of-type(2) {
-  top:23px;
-  }
-  .openbtn span:nth-of-type(3) {
-  top:31px;
-  }
-  .openbtn.active {
+}
+.openbtn span:nth-of-type(1) {
+    top:21px;	
+}
+.openbtn span:nth-of-type(2) {
+    top:29px;
+}
+.openbtn span:nth-of-type(3) {
+    top:37px;
+}
+.openbtn.active {
     border: none;
-  }
-  .openbtn.active span:nth-of-type(1) {
+}
+.openbtn.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
     width: 30%;
-  }
-  .openbtn.active span:nth-of-type(2) {
-  opacity: 0;
-  }
-  .openbtn.active span:nth-of-type(3){
+}
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+.openbtn.active span:nth-of-type(3){
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
-  }
-  .sptitle {
-    margin-top: 10px;
-    margin-left: 30px;
-  }
-  .sptitle a{
+}
+
+#main_canvas {
+    position: sticky;
+    top: 0px; 
+    width: 1045px;
+    height: 900px;
+    top: 60px;
+    z-index: 0;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+}
+.title {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FF5812;
+    margin-bottom: 30px;
+}
+.text {
+    margin-left: 30%;
+    margin-top: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    height: 100%;
+}
+.brsp {
+    display: none;
+}
+.aboutbox {
+    text-align: center;
+    margin-bottom: 110px;
+    margin-top: 160px;
+    padding: 0 20px;
+}
+.aboutbox p{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+}
+.atensstion {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+}
+.about-button a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 15px 30px 15px 0px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    z-index:0;
+    overflow: hidden;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.about-btn-pa {
+    margin-top: 50px;
+}
+.about-button {
+    display: block;
+}
+.about-button a:before {
+    content: url(../images/arrow.png);
+    transform: scale(0.5);
+    position: absolute;
+    right: -17px;
+    background: #000;
+    padding: 30px 30px 25px 30px;
+    border-radius: 60px;
+    z-index: 2;
+}
+.about-button a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #e2e2e2;
+    transition: .3s;
+    left:0;
+}
+.about-button a:hover:after {
+    width: 100%;
+    z-index: -1;
+}
+
+#catfoto {
+    position: relative;
+}
+.fot1 {
+    display: block;
+}
+.fot2 {
+    display: none;
+}
+.cat-textbox {
+    position: absolute;
+    top: 45%;
+    left: 50px;
+}
+.cat-textbox h4{
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(1.563rem, 0.792rem + 3.29vw, 3.75rem);
+    color: #fff;
+}
+.cat-textbox p{
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(1.063rem, 0.996rem + 0.28vw, 1.25rem);
+    color: #fff;
+}
+
+#products {
+    background-color: #FF5812;
+}
+.item {
+    text-align: center;
     font-family: "Fredoka", sans-serif;
     letter-spacing: 5px;
+    font-size: 53px;
+    font-weight: bold;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    color: #fff;
+}
+.fragrance {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 150px 20px;
+}
+.perfume {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.swiper {
+    max-width: 500px;
+    height: auto;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.swiper-button-prev {
+    margin-left: 20px !important;
+}
+.swiper-button-next {
+    margin-right: 20px !important;
+}
+.swiper .swiper-button-next,.swiper .swiper-button-prev{
+    background-color: #fff !important;
+    border:  solid 1px #000 !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+.swiper .swiper-button-next::after, .swiper .swiper-button-prev::after {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    font-size: 1.5rem !important;
+    left: 50px !important;
+}
+.swiper .swiper-button-next::after {
+    content: '\f054' !important;
+    margin-left: 3px !important;
+}
+.swiper .swiper-button-prev::after {
+    content: '\f053' !important;
+    margin-right: 3px !important;
+}
+.fragrance-ditail {
+    max-width: 400px;
+    height: auto;
+}
+.fragrance-ditail h4 {
+    font-family: "Fredoka", sans-serif;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 49px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.fragrance-ditail p {
+    font-size: 17px;
+    font-family: "Noto Sans", sans-serif;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.ditail-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 400px;
+    gap: 20px;
+}
+.products-btn {
+    margin-top: 60px;
+}
+.products-btn a{
+    color: #FF5812;
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 13px 71px;
+    margin-top: 60px;
+}
+.bbs{
+    align-items: center;
+    display: flex;
+    height: 150px;
+    line-height: 40px;
+    overflow:hidden;
+    width: 100%;
+    white-space:nowrap;
+    margin-top: 120px;
+    z-index: 1;
+}
+.bbs ul {
+    animation: flowing 40s linear infinite;
+    font-family: "Fredoka", sans-serif;
+    font-size: 150px;
+    font-weight: 900;
+    transform: translateX(100%);
+    margin: 0;
+    padding: 0;
+    color: #FF7034;
+}
+.bbs ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+@keyframes flowing {
+    0% { transform:translateX(0); }
+    100% { transform:translateX(-100%); }
+}
+
+#feature {
+    padding: 100px 20px;
+}
+.ft-inner {
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #FF5812;
+    border-radius: 80px;
+    width: 715px;
+    height: auto;
+    align-items: flex-end;
+    padding: 60px 80px;
+    gap: 80px;
+}
+.f1 {
+    text-align: center;
+}
+.f1 h4{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 10px;
+}
+.f1 p{
+    font-size: 14px;
+    font-family: "Noto Sans", sans-serif;
+}
+.ft-inner img{
+    width: 102px;
+    height: auto;
+}
+
+#qa {
+    display: block;
+}
+.qa-inner {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+.qatext-box {
+    margin-bottom: 20px;
+}
+.qa-text {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.qa-title {
+    font-family: "Jost", sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-inner {
+    width: 100%;
+    justify-content: space-between;
+    background-color: #FF7043;
+    gap: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact {
+    background-color: #FF5812;
+    border-radius: 0 80px 0 0;
+    text-align: center;
+}
+.contact-inner{
+    padding: 100px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.contacttext-box {
+    text-align: left;
+    display: inline-block;
+    margin-left: -70px;
+}
+.contact-title {
+    font-family: "Jost", sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.contact-text {
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.sns {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 20%;
+}
+.x {
+    background-color: #fff;
     color: #000;
-  }
+    border-radius: 50px;
+    margin-right: 10px;
+    width: 40px;
+    text-align: center;
+}
+.insta {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    margin-right: 10px;
+    width: 120px;
+    text-align: center;
+}
 
-  .text {
+.footer-nav{
+    gap: 160px;
+    padding: 100px 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 20%;
+}
+.footer-list li {
+    font-size: 14px;
+}
+.p1{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.p2{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.footer-list li a{
+    color: #fff;
+    font-family: "Jost", sans-serif;
+}
+.nav-title1 {
+    font-family: "Fredoka", sans-serif;
+    letter-spacing: 5px;
+    margin: 0px 0 25px 0;
+    font-size: 36px;
+    display: block;
+    color: #fff;
+}
+.nav-title2 {
+    display: none;
+}
+
+.copylight {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 1060px) { 
+.footer-inner {
+    display: block;
+    padding-bottom: 50px;
+    border-radius: 0 80px 0 0;
+}
+.contact {
+    width: 100%;
+}
+.footer-nav {
+    display: block;
+}
+.footer-list {
+    margin-left: 20%;
+}
+.footer-list ul {
+    display: block;
+    width: 100px;
+    margin-left: 10%;
+}
+.footer-list li {
+    margin-bottom: 20px;
+}
+.p1{
+    margin-top: 5px;
+}
+.nav-title2 {
+    display: block;
+    text-align: center;
+    margin: 50px 0 25px 0;
+    font-size: 32px;
+    font-family: "Fredoka", sans-serif;
+    letter-spacing: 5px;
+}
+.nav-title1 {
+    display: none;
+}
+.sns {
+    margin-left: 10%;
+}
+}
+
+@media screen and (max-width: 960px) {
+.maintitle {
+    top: 50px;
+}
+.brsp {
+    display: block;
+}
+
+.text {
     margin-left: 15%;
-  }
+}
 
-  .fragrance {
+.fragrance {
     display:grid;
     grid-template-rows:40% 60%;
     gap: 0;
-  }
-  .perfume {
+}
+.perfume {
     display:grid;
     grid-template-rows:40% 60%;
     gap: 0;
     padding: 250px 20px 0 20px;
-  }
-  .fragrance-ditail{
+}
+.fragrance-ditail{
     grid-row:1/2;
     margin: 0 auto;
-  }
-  .swiper {
+}
+.swiper {
     grid-row:2/3;
     width: 450px;
     margin: 0 auto;
-  }
-  .swiper .swiper-button-next,.swiper .swiper-button-prev{
+}
+.swiper .swiper-button-next,.swiper .swiper-button-prev{
     margin-top: 400px;
-  }
-  .swiper-button-next {
+}
+.swiper-button-next {
     margin-right: 100px !important;
-  }
-  .swiper-button-prev {
+}
+.swiper-button-prev {
     margin-right: 100px !important;
-  }
-  .products-btn {
+}
+.products-btn {
     margin-top: 330px;
-  }
-  .swiper-pagination {
+}
+.swiper-pagination {
     top: 50px;
-  }
-  .swiper-pagination {
+}
+.swiper-pagination {
     top: 580px !important;
 }
 
-  .qatext-box {
+.qatext-box {
     text-align: left;
     display: inline-block;
     margin-left: -10%;
-  }
+}
 }
 
-@media screen and (max-width: 720px) { 
-  .main {
-    padding-top: 0;
-    height: 75vh;
-  }
+@media screen and (max-width: 600px) {
+.maintitle {
+    top: 50px;
+}
+.brsp {
+    display: block;
+}
+
+.title {
+    font-size: 25px;
+}
+.text {
+    margin-left: 15%;
+}
+
+.fot1 {
+    display: none;
+}
+.fot2 {
+    display: block;
+}
+.cat-textbox {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
 }

@@ -1,6 +1,6 @@
 #loading{
     transition: all 3s; /*ローディングにかかる時間*/
-    background-color: #1414ff;
+    background-color: #FF5812;
     z-index: 999;
     position: fixed;
     inset: 0;

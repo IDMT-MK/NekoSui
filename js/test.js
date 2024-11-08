@@ -16,3 +16,24 @@ $(document).ready(function() {
       $magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
     });
   });
+
+
+const isFirstLoad = sessionStorage.getItem('isFirstLoad');
+const modal = document.querySelector('.js-modal'),
+open = document.querySelector('.js-modal-open'),
+close = document.querySelector('.js-modal-close');
+
+
+//「閉じるボタン」をクリックしてモーダルを閉じる
+function modalClose() {
+modal.classList.add('is-active');
+}
+close.addEventListener('click', modalClose);
+
+//「モーダルの外側」をクリックしてモーダルを閉じる
+function modalOut(e) {
+if (e.target == modal) {
+    modal.classList.add('is-active');
+}
+}
+addEventListener('click', modalOut);
