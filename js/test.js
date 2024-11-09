@@ -15,7 +15,7 @@ $(document).ready(function() {
     $(document).on("mousemove", function(e) {
       $magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
     });
-  });
+});
 
 
 const isFirstLoad = sessionStorage.getItem('isFirstLoad');

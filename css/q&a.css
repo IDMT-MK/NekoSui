@@ -159,16 +159,17 @@ header {
   }
 }
 
+
 .footer-inner {
   width: 100%;
   justify-content: space-between;
-  background-color: #205375;
+  background-color: #FF7043;
   gap: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .contact {
-  background-color: #1E3E62;
+  background-color: #FF5812;
   border-radius: 0 80px 0 0;
   text-align: center;
 }
@@ -196,74 +197,27 @@ header {
   letter-spacing: 2px;
   color: #fff;
 }
-.contact-button a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 240px;
-  padding: 15px 30px 15px 0px;
-  color: #313131;
-  transition: 0.3s ease-in-out;
-  font-weight: 600;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 50px;
-  z-index:0;
-  overflow: hidden;
-  font-family: "Jost", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.contact-button a:before {
-  content: url(../images/Arrow2.png);
-  transform: scale(0.5);
-  position: absolute;
-  right: -17px;
-  background: #D8FF6D;
-  padding: 30px 30px 25px 30px;
-  border-radius: 60px;
-  z-index: 2;
-  border: 1px solid #000;
-}
-/* .contact-button a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  display: block;
-  background: #ccc;
-  transition: .3s;
-  left:0;
-} */
-.contact-button a:hover:after {
-  width: 100%;
-  z-index: -1;
-}
 .sns {
   display: flex;
   margin-top: 80px;
   margin-left: 20%;
 }
 .x {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border-radius: 50px;
   margin-right: 10px;
   width: 40px;
   text-align: center;
 }
 .insta {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border-radius: 50px;
   margin-right: 10px;
   width: 120px;
   text-align: center;
 }
-
 .footer-nav{
   gap: 160px;
   padding: 100px 10px;
@@ -308,53 +262,50 @@ header {
   font-family: "Noto Sans", sans-serif;
   text-align: center;
   padding: 20px 0;
-  background-color: #fff;
 }
-  
+
+
 @media screen and (max-width: 1060px) { 
   .footer-inner {
-    display: block;
-    padding-bottom: 50px;
-    border-radius: 0 80px 0 0;
+      display: block;
+      padding-bottom: 50px;
+      border-radius: 0 80px 0 0;
   }
   .contact {
-    width: 100%;
+      width: 100%;
   }
   .footer-nav {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+      display: block;
   }
   .footer-list {
-    margin-left: 20%;
+      margin-left: 20%;
   }
   .footer-list ul {
-    display: block;
-    width: 100px;
-    margin-left: 10%;
+      display: block;
+      width: 100px;
+      margin-left: 10%;
   }
   .footer-list li {
-    margin-bottom: 20px;
+      margin-bottom: 20px;
   }
   .p1{
-    margin-top: 5px;
+      margin-top: 5px;
   }
   .nav-title2 {
-    display: block;
-    text-align: center;
-    margin: 50px 0 25px 0;
-    font-size: 32px;
-    font-family: "Fredoka", sans-serif;
-    letter-spacing: 5px;
-    color: #fff;
+      display: block;
+      text-align: center;
+      margin: 50px 0 25px 0;
+      font-size: 32px;
+      font-family: "Fredoka", sans-serif;
+      letter-spacing: 5px;
   }
   .nav-title1 {
-    display: none;
+      display: none;
   }
   .sns {
-    margin-left: 10%;
+      margin-left: 10%;
   }
-}
+  }
   
 @media screen and (max-width: 960px) {
   .pcheader {
