@@ -9,15 +9,6 @@ $("#g-nav a").click(function () {
 });
 
 
-$(document).ready(function() {
-    var $magic = $(".magic"),
-        magicWHalf = $magic.width() / 2;
-    $(document).on("mousemove", function(e) {
-      $magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
-    });
-});
-
-
 const isFirstLoad = sessionStorage.getItem('isFirstLoad');
 const modal = document.querySelector('.js-modal'),
 open = document.querySelector('.js-modal-open'),

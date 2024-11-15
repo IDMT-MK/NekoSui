@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/item.css">
+    <meta charset="utf-8">
+    <title>NekoSui</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="spheader">
+      <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="spg-nav">
+          <div id="spg-nav-list">
+            <ul>
+              <li><a href="index.html">TOP</a></li> 
+              <li><a href="about.html">ABOUT</a></li> 
+              <li><a href="products.html">PRODUCT</a></li> 
+              <li><a href="q&a.html">Q&A</a></li>
+              <li><a href="contact.html">CONTACT</a></li> 
+            </ul>
+          </div>
+        </nav>
+      </div>
+     </header>
+
+     <div id="item">
+      <div class="item-inner">
+        <img src="images/japanesecat2.png">
+        <dov class="itemdetail">
+          <p class="itemtitle">Perfume<br>Japanese cat</p>
+          <p class="item-japanese">香り玉　日本猫</p>
+          <p class="item-price">¥500<span>/税込</span></p>
+          <div class="container">
+            <div class="field">
+              <button class="button" id="down">－</button>
+              <input type="text" value="0" class="inputtext" id="textbox">
+              <button class="button" id="up">＋</button>
+            </div>
+          </div>
+          <p class="cart">Add to cart</p>
+          <p class="ditail-title">商品説明</p>
+          <p class="ditail-text">商品についての説明文が入ります</p>
+        </dov>
+      </div>
+     </div>
+
+     <div id="otheritem">
+      <div class="othertitle">OTHER ITEMS</div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div><a href="item.html"><img src="images/munchikan1.png"></a></div>
+            <p class="itemname">Munchkin</p>
+            <a href="item.html"><p class="price">¥500<span>/税込</span></p></a>
+          </div>
+          <div class="swiper-slide">
+            <div><a href="item4.html"><img src="images/munchikan2.png"></a></div>
+            <p class="itemname">Munchkin</p>
+            <a href="item4.html"><p class="price">¥500<span>/税込</span></p></a>
+          </div>
+          <div class="swiper-slide">
+            <div><a href="item3.html"><img src="images/suco1.png"></a></div>
+            <p class="itemname">Scottish Fold</p>
+            <a href="item3.html"><p class="price">¥500<span>/税込</span></p></a>
+          </div>
+          <div class="swiper-slide">
+            <div><a href="item5.html"><img src="images/suco2.png"></a></div>
+            <p class="itemname">Scottish Fold</p>
+            <a href="item5.html"><p class="price">¥500<span>/税込</span></p></a>
+          </div>
+          <div class="swiper-slide">
+            <div><a href="item3.html"><img src="images/japanesecat1.png"></a></div>
+            <p class="itemname">japanesecat</p>
+            <a href="item3.html"><p class="price">¥500<span>/税込</span></p></a>
+          </div>
+        </div>
+        <div class="space"><div class="swiper-scrollbar"></div></div>
+      </div>
+      <div class="top-button">
+        <a href="index.html">PAGE TOP</a>
+      </div>
+     </div>
+
+     <footer>
+      <div class="footer-inner">
+        <div class="contact">
+          <div class="contact-inner">
+            <div class="contacttext-box">
+              <div class="contact-title">CONTACT</div>
+              <div class="contact-text">お問い合わせはこちらから</div>
+            </div>
+            <div class="contact-button">
+              <a href="contact.html">CONTACT US</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-nav">
+          <div class="nav-title2">NEKOSUI</div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="index.html">TOP</a></li> 
+              <li><a href="about.html">ABOUT</a></li> 
+              <li><a href="#product">PRODUCT</a>
+                  <a href="fragranceball.html"><p class="p1">Fragrance Ball</p></a>
+                  <a href="perfume.html"><p class="p2">Perfume</p></a>
+              </li> 
+              <li><a href="q&a.html">Q&A</a></li>
+            </ul>
+            <div class="sns">
+              <a href=""><p class="x">X</p></a>
+              <a href=""><p class="insta">Instagram</p></a>
+            </div>
+          </div>
+          <div class="nav-title1">NEKOSUI</div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copylight">
+      <p>© 2024 Miko Idemitsu</p>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script src="js/item.js"></script>
+    <script src="js/test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        // loop: true,
+        spaceBetween: 20,
+        centeredSlides: true,
+        mousewheel: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        breakpoints: {
+        400: {
+          slidesPerView: 2.5,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1025: {
+          slidesPerView: 4.5,
+        },
+      },
+      });
+    </script>
+</html>

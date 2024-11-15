@@ -1,7 +1,7 @@
 gsap.fromTo('.box',
     {
         autoAlpha: 0, 
-        y: 20
+        y: 0
     },
     {
         autoAlpha: 1,
@@ -11,6 +11,7 @@ gsap.fromTo('.box',
         scrollTrigger: {
         trigger: '.box',
         start: 'top center',
+        markers: false,
     }
 });
 
