@@ -143,21 +143,26 @@ header {
   width: auto;
   display: block;
 }
+.item-img2 img{
+  max-height: 450px;
+    width: auto;
+    display: block;
+}
 .itemtitle {
   font-family: "Fredoka", sans-serif;
   font-size: 53px;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .item-japanese {
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .item-price {
   font-family: "Jost", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 .item-price span {
   font-size: 15px;
@@ -239,7 +244,8 @@ header {
 .othertitle {
   font-family: "Fredoka", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 53px;
+  font-weight: 600;
   padding: 50px 0 50px 50px;
 }
 .swiper-slide {
@@ -355,13 +361,13 @@ header {
   justify-content: space-between;
   background-color: #FF7043;
   gap: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
 }
 .contact {
   background-color: #FF5812;
   border-radius: 0 80px 0 0;
   text-align: center;
+  flex-basis: 40%;
 }
 .contact-inner{
   padding: 100px 0;
@@ -588,6 +594,7 @@ header {
   .itemtitle {
     margin-top: 30px;
     margin-left: 4%;
+    font-size: 36px;
   }
   .item-japanese {
     margin-left: 4%;
@@ -609,6 +616,11 @@ header {
   .ditail-text {
     margin-left: 4%;
   }
+
+  .othertitle {
+    font-size: 36px;
+    padding: 50px 0 50px 20px;
+}
 }
 
 @media screen and (max-width: 450px) {

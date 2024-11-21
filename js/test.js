@@ -8,23 +8,11 @@ $("#g-nav a").click(function () {
     $("#spg-nav").removeClass('panelactive');
 });
 
-
-const isFirstLoad = sessionStorage.getItem('isFirstLoad');
-const modal = document.querySelector('.js-modal'),
-open = document.querySelector('.js-modal-open'),
-close = document.querySelector('.js-modal-close');
-
-
-//「閉じるボタン」をクリックしてモーダルを閉じる
-function modalClose() {
-modal.classList.add('is-active');
+$(".concept-img").hover(
+function(){
+    img_hover.play();
+},
+function(){
+    img_hover.reverse();
 }
-close.addEventListener('click', modalClose);
-
-//「モーダルの外側」をクリックしてモーダルを閉じる
-function modalOut(e) {
-if (e.target == modal) {
-    modal.classList.add('is-active');
-}
-}
-addEventListener('click', modalOut);
+);

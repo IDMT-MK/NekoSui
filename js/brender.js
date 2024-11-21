@@ -9,14 +9,14 @@ function init() {
     });
 
     // サイズ指定
-    const width = 1045;
-    const height = 800;
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(width, height);
+    // const width = window.innerWidth;
+    // const height = window.innerHeight;
+    // renderer.setPixelRatio(window.devicePixelRatio);
+    // renderer.setSize(width, height);
 
     // シーンを作成
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color( 0xffffff );
+    scene.background = new THREE.Color( "rgb(255, 249, 240)" );
 
     // 環境光源を作成
     const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -30,8 +30,8 @@ function init() {
     scene.add(directionalLight);
 
     // カメラを作成
-    const camera = new THREE.PerspectiveCamera(50, width / height, 1, 3000);
-    camera.position.set(0, 0, 1000);
+    const camera = new THREE.PerspectiveCamera(45, 1.0);
+    camera.position.set(0, 0, +1000);
 
     // カメラコントローラーを作成
     const controls = new THREE.OrbitControls(camera, canvasElement);
@@ -47,30 +47,14 @@ function init() {
         function (glb) {
             model = glb.scene;
             model.name = "model_test";
-            model.scale.set(130.0, 130.0, 130.0);
-            model.position.set(-1050,-250,0);
+            model.scale.set(180.0, 180.0, 180.0);
+            model.position.set(-1700,-250,0);
             scene.add( glb.scene );
         },
         function (error) {
             console.log(error);
         }
     );
-
-        // 初期化のために実行
-    onResize();
-    // リサイズイベント発生時に実行
-    window.addEventListener('resize', onResize);
-    function onResize() {
-        // サイズを取得
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-        // レンダラーのサイズを調整する
-        renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setSize(width, height);
-        // カメラのアスペクト比を正す
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-    }
 
     // リアルタイムレンダリング
 	tick();
@@ -79,5 +63,23 @@ function init() {
 		renderer.render(scene, camera);
 		requestAnimationFrame(tick);
 	}
+
+    onResize();
+      // リサイズイベント発生時に実行
+    window.addEventListener("resize", onResize);
+
+    function onResize() {
+        // サイズを取得
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        // レンダラーのサイズを調整する
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(width, height);
+
+        // カメラのアスペクト比を正す
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+    }
 
 }

@@ -95,7 +95,6 @@ img {
     text-align: left;
 }
 #spg-nav li a{
-    font-family: "Jost", sans-serif;
     color: #000;
     text-decoration: none;
     padding:10px;
@@ -160,14 +159,13 @@ img {
     width: 30%;
 }
 
-#main_canvas {
-    /* position: sticky; */
+/* #main_canvas {
     top: 0px; 
     width: 1045px;
     height: 900px;
     top: 60px;
     z-index: 0;
-}
+} */
 
 #about {
     width: 100%;
@@ -216,7 +214,7 @@ img {
     margin: 0 auto;
     max-width: 240px;
     padding: 15px 30px 15px 0px;
-    color: #313131;
+    color: #000;
     transition: 0.3s ease-in-out;
     font-weight: 600;
     background: #fff;
@@ -260,6 +258,7 @@ img {
     z-index: -1;
 }
 
+
 #catfoto {
     position: relative;
 }
@@ -285,10 +284,7 @@ img {
     color: #fff;
 }
 
-.point-inner  {
-    margin-bottom: 500px;
-}
-.point-inner h4{
+.pt-title {
     text-align: center;
     font-family: "Zen Maru Gothic", serif;
     letter-spacing: 5px;
@@ -296,6 +292,9 @@ img {
     font-weight: 800;
     padding-top: 60px;
     margin-bottom: 60px;
+}
+.point-inner  {
+    margin-bottom: 500px;
 }
 .pointimg {
     margin: 0 20px;
@@ -414,6 +413,7 @@ img {
     margin-top: 60px;
 }
 .products-btn a{
+    font-family: "Fredoka", sans-serif;
     color: #FF5812;
     background-color: #fff;
     border-radius: 45px;
@@ -628,13 +628,13 @@ img {
     justify-content: space-between;
     background-color: #FF7043;
     gap: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 .contact {
     background-color: #FF5812;
     border-radius: 0 80px 0 0;
     text-align: center;
+    flex-basis: 40%;
 }
 .contact-inner{
     padding: 100px 0;
@@ -850,6 +850,7 @@ img {
 }
 .plan-inner img{
     margin-bottom: 50px;
+    width: 280px;
 }
 .plan-inner .plan-button .about-button a{
     margin: 0 auto;

@@ -3,10 +3,10 @@
   <head>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/modal.css">
     <meta charset="utf-8">
     <title>NEKOSUI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,14 +32,21 @@
       </div>
     </div>
 
-<!-- <div class="modal js-modal">
-  <div class="modal-container">
-    <div class="modal-close js-modal-close">×</div>
-    <div class="modal-content">
-      <p>開きました。</p>
-    </div>
+    <div class="bg_onetime_popup">
+      <div class="onetime_popup">
+          <span class="onetime_popup_title_close"></span>
+          <div class="onetime_popup_title">
+            <span>ATTENTION!</span>
+          </div>
+          <div class="onetime_popup_content">
+              <p>このWebサイトは架空の商品を販売するWebサイトです。<br>
+                このWebサイトに載っている商品は架空の物のため購入することは出来ません。<br>
+                また、実在する人物・団体には一切関係ありません。
+              </p>
+          </div>
+      </div>
   </div>
-</div> -->
+  
 
    <header>
     <div class="spheader">
@@ -50,6 +57,7 @@
             <li><a href="index.html">TOP</a></li> 
             <li><a href="about.html">ABOUT</a></li> 
             <li><a href="products.html">PRODUCT</a></li> 
+            <li><a href="plan.html.html">SUBSCRIPTION PLAN</a></li>
             <li><a href="q&a.html">Q&A</a></li>
             <li><a href="contact.html">CONTACT</a></li> 
           </ul>
@@ -69,12 +77,12 @@
 
   <div id="about">
     <div class="aboutbox">
-      <div class="title">私たちの香水ブランドへ<br class="brsp">ようこそ</div>
-      <p>「NEKOSUI」は、猫の魅力と個性を引き立てるために特別にデザインされた香水ブランドです。<br>
-        猫はそれぞれ異なる性格や好みを持っており、その多様性を香りで表現します。<br>
-        私たちの香水は、猫の愛らしさや神秘的な雰囲気を感じさせる香りを厳選し、猫と離れていても猫の匂いで癒しを提供します。<br>
-      </p>
-      <div class="atensstion">（このサイトは架空の商品を販売するWebサイトです）</div>
+      <div class="box7"><div class="title"><span>私たちの香水ブランドへ<br class="brsp">ようこそ</span></div></div>
+                        <p><span class="box8">「NEKOSUI」は、猫の魅力と個性を引き立てるために特別にデザインされた香水ブランドです。<br></span>
+                          <span class="box8">猫はそれぞれ異なる性格や好みを持っており、その多様性を香りで表現します。<br></span>
+                          <span class="box8">私たちの香水は、猫の愛らしさや神秘的な雰囲気を感じさせる香りを厳選し、猫と離れていても猫の匂いで癒しを提供します。<br></span>
+                        </p>
+      <div class="box9"><div class="atensstion"><span>（このサイトは架空の商品を販売するWebサイトです）</span></div></div>
       <div class="about-btn-pa">
         <div class="about-button">
           <a href="about.html">ABOUT MORE</a>
@@ -84,22 +92,25 @@
   </div>
 
   <div id="catfoto">
-    <img class="fot1" src="images/foto1.png">
+    <div class="box3">
+      <img class="fot1" src="images/foto1.png">
     <img class="fot2" src="images/foto2.png">
     <div class="cat-textbox">
       <h4>リアルな猫の匂い！</h4>
       <p>本物の猫のような匂いと可愛らしい見た目で、<br>
         どんな時でもあなたに癒しを届けます</p>
     </div>
+    </div>
   </div>
 
-  <!-- <div id="main_canvas">
+  <h4 class="pt-title">NEKOSUIの効果</h4>
+
+  <div id="main_canvas">
     <canvas id="myCanvas"></canvas>
-  </div> -->
+  </div>
 
   <div class="point">
     <div class="point-inner">
-      <h4>NEKOSUIの効果</h4>
       <div class="pointimg">
         <div>
           <img class="pt1" src="images/ef1.png">
@@ -223,25 +234,27 @@
   </div>
 
   <div id="feature">
-    <div class="ft-inner">
-      <div class="f1">
-        <img src="images/fe1.png">
-        <div>
-          <h4>天然成分の使用</h4>
-        <p>全ての製品は、天然由来の成分を使用しており、<br>
-          化学物質を極力排除しています。これにより、<br>
-          より安心して使用できる製品を提供しています。
-        </p>
-        </div>
-      </div>
-      <div class="f1">
-        <img src="images/fe2.png">
-        <div>
-          <h4>エコフレンドリーなパッケージ</h4>
-          <p>環境に配慮したリサイクル可能なパッケージを<br>
-            使用しており、持続可能な製品作りを目指しています。<br>
-            これにより、環境保護にも貢献しています。
+    <div class="box4">
+      <div class="ft-inner">
+        <div class="f1">
+          <img src="images/fe1.png">
+          <div>
+            <h4>天然成分の使用</h4>
+          <p>全ての製品は、天然由来の成分を使用しており、<br>
+            化学物質を極力排除しています。これにより、<br>
+            より安心して使用できる製品を提供しています。
           </p>
+          </div>
+        </div>
+        <div class="f1">
+          <img src="images/fe2.png">
+          <div>
+            <h4>エコフレンドリーなパッケージ</h4>
+            <p>環境に配慮したリサイクル可能なパッケージを<br>
+              使用しており、持続可能な製品作りを目指しています。<br>
+              これにより、環境保護にも貢献しています。
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -249,16 +262,18 @@
 
   <div id="plan">
     <div class="plan-inner">
-      <img src="images/plan.png">
+      <div class="box5"><img src="images/plan.png"></div>
       <div>
-        <h4>定期購入プラン</h4>
+        <div class="box6">
+          <h4>定期購入プラン</h4>
         <p>定期的に香りを楽しみたいユーザー向けに、<br>
            定期購入プランも用意。
         </p>
         <div class="plan-button">
           <div class="about-button">
-            <a href="q&a.html">VIEW MORE</a>
+            <a href="plan.html">VIEW MORE</a>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -330,6 +345,7 @@
                 <a href="products.html"><p class="p1">Fragrance Ball</p></a>
                 <a href="products.html"><p class="p2">Perfume</p></a>
             </li> 
+            <li><a href="plan.html.html">SUBSCRIPTION</a></li>
             <li><a href="q&a.html">Q&A</a></li>
           </ul>
           <div class="sns">
@@ -362,6 +378,7 @@
   <script src="js/brender.js"></script>
   <script src="js/loading.js"></script>
   <script src="js/gsap.js"></script>
+  <script src="js/modal.js"></script>
 
 
   <script>
