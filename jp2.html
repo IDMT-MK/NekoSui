@@ -112,8 +112,8 @@
               <li><a href="index.html">TOP</a></li> 
               <li><a href="about.html">ABOUT</a></li> 
               <li><a href="#product">PRODUCT</a>
-                  <a href="fragranceball.html"><p class="p1">Fragrance Ball</p></a>
-                  <a href="perfume.html"><p class="p2">Perfume</p></a>
+                  <a href="products.html"><p class="p1">Fragrance Ball</p></a>
+                  <a href="products.html"><p class="p2">Perfume</p></a>
               </li> 
               <li><a href="plan.html">SUBSCRIPTION</a></li>
               <li><a href="q&a.html">Q&A</a></li>
@@ -140,7 +140,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        // loop: true,
         spaceBetween: 20,
         centeredSlides: true,
         mousewheel: true,
@@ -149,16 +148,19 @@
           hide: true,
         },
         breakpoints: {
-        400: {
-          slidesPerView: 2.5,
+          0: { // 画面幅が0px以上
+            slidesPerView: 2.5, // 2.5個分表示
+          },
+          400: { // 画面幅が400px以上
+            slidesPerView: 2.5,
+          },
+          768: { // 画面幅が768px以上
+            slidesPerView: 3,
+          },
+          1025: { // 画面幅が1025px以上
+            slidesPerView: 4.5,
+          },
         },
-        768: {
-          slidesPerView: 3,
-        },
-        1025: {
-          slidesPerView: 4.5,
-        },
-      },
       });
     </script>
 </html>

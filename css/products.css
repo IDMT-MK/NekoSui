@@ -288,9 +288,10 @@ header {
   z-index: -1;
 }
 .contact-title {
-  font-family: "Jost", sans-serif;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
   letter-spacing: 5px;
-  font-size: 20px;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -444,6 +445,10 @@ header {
     width: 100%;
     height: auto;
   }
+  .guidance {
+    width: 80%;
+    font-size: 15px;
+}
 }
 
 @media screen and (max-width: 450px) {

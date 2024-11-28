@@ -490,7 +490,10 @@ model-viewer {
     0% { transform:translateX(0); }
     100% { transform:translateX(-100%); }
 }
-.products-btn2 {
+.products-btn2first {
+    display: none;
+}
+.products-btn2secound{
     display: none;
 }
 
@@ -688,9 +691,10 @@ model-viewer {
     margin-left: -70px;
 }
 .contact-title {
-    font-family: "Jost", sans-serif;
+    font-family: "Fredoka", sans-serif;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 25px;
     margin-bottom: 20px;
     color: #fff;
 }
@@ -868,12 +872,28 @@ model-viewer {
 .products-btn {
     display: none;
 }
-.products-btn2 {
+.products-btn2first{
+    padding-bottom: 100px;
     display: block;
-    margin: 0 auto;
-    margin-top: -50px;
+    margin-top: -60px;
+    justify-content: center;
+    text-align: center;
 }
-.products-btn2 a{
+.products-btn2first a{
+    color: #FF5812;
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 13px 71px;
+    margin-top: 60px;
+}
+.products-btn2secound {
+    display: block;
+    padding-top: 100px;
+    margin-top: -50px;
+    justify-content: center;
+    text-align: center;
+}
+.products-btn2secound a{
     color: #FF5812;
     background-color: #fff;
     border-radius: 45px;
