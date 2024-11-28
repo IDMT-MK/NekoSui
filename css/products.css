@@ -435,9 +435,8 @@ header {
 
 @media screen and (max-width: 600px) {
   .item {
-    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 600px以下の画面で2列に変更 */
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
     margin: 30px 30px 0 30px;
   }
   .item li img {
@@ -449,15 +448,20 @@ header {
 
 @media screen and (max-width: 450px) {
   .openbtn {
-      top: 20px;
-      right: 20px;
-    }
+    top: 20px;
+    right: 20px;
+  }
+
+  .guidance {
+    font-size: 12px;
+  }
 
   .product-fragrance {
     font-size: 42px;
   }
+
   .producttitle {
     font-size: 35px;
-}
+  }
 
 }

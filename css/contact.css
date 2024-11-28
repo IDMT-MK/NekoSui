@@ -262,7 +262,6 @@ label.error {
 .footer-list ul {
     display: flex;
     justify-content: space-between;
-    width: 400px;
     margin-left: 20%;
 }
 .footer-list li {
@@ -277,7 +276,7 @@ label.error {
     font-size: 12px;
 }
 .footer-list li a{
-    color: #000;
+    color: #fff;
     font-family: "Jost", sans-serif;
     color: #fff;
 }
@@ -291,6 +290,7 @@ label.error {
 }
 .nav-title2 {
     display: none;
+    color: #fff;
 }
 
 .copylight {

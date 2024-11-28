@@ -57,7 +57,7 @@
             <li><a href="index.html">TOP</a></li> 
             <li><a href="about.html">ABOUT</a></li> 
             <li><a href="products.html">PRODUCT</a></li> 
-            <li><a href="plan.html.html">SUBSCRIPTION PLAN</a></li>
+            <li><a href="plan.html">SUBSCRIPTION PLAN</a></li>
             <li><a href="q&a.html">Q&A</a></li>
             <li><a href="contact.html">CONTACT</a></li> 
           </ul>
@@ -105,24 +105,36 @@
 
   <h4 class="pt-title">NEKOSUIの効果</h4>
 
-  <div id="main_canvas">
-    <canvas id="myCanvas"></canvas>
-  </div>
+    <div class="point">
+        <!-- model-viewer 要素 -->
+      <model-viewer 
+      id="myModel" 
+      src="3d/japanesecat1.glb" 
+      alt="3D model" 
+      autoplay
+      exposure="0.7"
+      auto-rotate auto-rotate-delay="1000"
+      auto-rotate rotation-per-second="500%">
+      </model-viewer>
 
-  <div class="point">
-    <div class="point-inner">
-      <div class="pointimg">
-        <div>
-          <img class="pt1" src="images/ef1.png">
-          <img class="pt3" src="images/ef3.png">
-        </div>
-        <div>
-          <img class="pt2" src="images/ef2.png">
-          <img class="pt4" src="images/ef4.png">
+      <div class="point-inner">
+        <div class="pointimg">
+          <div>
+            <img class="pt1" src="images/ef1.png">
+            <img class="pt3" src="images/ef3.png">
+          </div>
+          <div>
+            <img class="pt2" src="images/ef2.png">
+            <img class="pt4" src="images/ef4.png">
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+    <!-- <div id="main_canvas">
+    <canvas id="myCanvas"></canvas>
+  </div> -->
 
   <div id="products">
       <div class="ilst">
@@ -345,7 +357,7 @@
                 <a href="products.html"><p class="p1">Fragrance Ball</p></a>
                 <a href="products.html"><p class="p2">Perfume</p></a>
             </li> 
-            <li><a href="plan.html.html">SUBSCRIPTION</a></li>
+            <li><a href="plan.html">SUBSCRIPTION</a></li>
             <li><a href="q&a.html">Q&A</a></li>
           </ul>
           <div class="sns">
@@ -363,17 +375,17 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+
+  <!-- <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/three@0.142.0/examples/js/loaders/GLTFLoader.js"></script> -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@latest/dist/model-viewer.js"></script>
+
   <script src="js/test.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://unpkg.com/three@0.142.0/examples/js/loaders/GLTFLoader.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <script src="js/brender.js"></script>
   <script src="js/loading.js"></script>
@@ -394,6 +406,57 @@
       },
     });
   </script>
+
+<script>
+  // 3Dモデルの要素を取得
+  const modelViewer = document.getElementById('myModel');
+  const point = document.querySelector('.point');
+  
+  // スクロールイベントで3DモデルをY軸方向に動かす関数
+  const onScroll = () => {
+    const scrollY = window.scrollY; // 現在のスクロール位置
+    const pointTop = point.offsetTop; // .pointの上端位置
+    const pointHeight = point.offsetHeight; // .pointの高さ
+    const pointBottom = pointTop + pointHeight; // .pointの下端位置
+
+    // 画面幅が960px以下ならアニメーションを無効にする
+    if (window.innerWidth <= 960) {
+      modelViewer.style.transform = ''; // 3Dモデルの位置をリセット
+      return; // スクロール処理を終了
+    }
+  
+    // アニメーション開始位置: .pointの上端から100px上
+    const startScroll = pointTop - 100;
+  
+    // アニメーション終了位置: .pointの下端より500px上
+    const endScroll = pointBottom - 500; // 終了位置を少し上に設定
+  
+    // スクロールがアニメーション範囲内にある場合
+    if (scrollY >= startScroll && scrollY <= endScroll) {
+      // 現在のスクロール位置に基づいて移動距離を計算
+      const progress = (scrollY - startScroll) / (endScroll - startScroll); // 0から1の範囲で進行度を計算
+      const moveDistance = progress * (pointHeight - 500); // .point内での移動量を計算
+  
+      // requestAnimationFrameを使ってブラウザの描画タイミングに合わせてアニメーション
+      window.requestAnimationFrame(() => {
+        modelViewer.style.transform = `translateX(-50%) translateY(${moveDistance}px)`; // Y方向に移動
+      });
+    } else if (scrollY < startScroll) {
+      // スクロール位置が開始位置より前の場合は初期位置に戻す
+      window.requestAnimationFrame(() => {
+        modelViewer.style.transform = `translateX(-50%) translateY(0px)`; // 初期位置に戻す
+      });
+    } else if (scrollY > endScroll) {
+      // スクロール位置が終了位置より後の場合は終了位置で固定
+      window.requestAnimationFrame(() => {
+        modelViewer.style.transform = `translateX(-50%) translateY(${pointHeight - 500}px)`; // 終了位置で固定
+      });
+    }
+  };
+  
+  // スクロールイベントを監視
+  window.addEventListener('scroll', onScroll);
+</script>
 
   </body>
 </html>

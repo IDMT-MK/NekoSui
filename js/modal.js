@@ -1,13 +1,22 @@
-$(document).ready(function(){
-    if (sessionStorage.getItem('visit')) {
-        $(".bg_onetime_popup").css('display', 'block');
-    }else {
-        sessionStorage.setItem('visit', 'second'); 
-        $(".bg_onetime_popup").css('display', 'none');
+
+$(document).ready(function() {
+    // クッキーの読み込み
+    if ($.cookie('popupDisplayed') !== 'true') {
+        // 初回訪問の場合、ポップアップを表示
+        $(".bg_onetime_popup").fadeIn();
+
+        // クッキーにポップアップ表示済みを記録（ブラウザを閉じるまで有効）
+        $.cookie('popupDisplayed', 'true', { expires: 0, path: '/' });
     }
 
-    $(".bg_onetime_popup").click(function () {
-        $(".bg_onetime_popup").css('display', 'none');
-        $(".bg_onetime_popup").fadeOut( 2000 );
+    // ポップアップの閉じるボタンがクリックされたとき
+    $(".onetime_popup_title_close").click(function(event) {
+        event.stopPropagation(); // クリックイベントの伝播を止める
+        $(".bg_onetime_popup").fadeOut(500); // 500ミリ秒かけてフェードアウト
+    });
+
+    // ポップアップの背景がクリックされたとき
+    $(".bg_onetime_popup").click(function() {
+        $(".bg_onetime_popup").fadeOut(500); // 500ミリ秒かけてフェードアウト
     });
 });
