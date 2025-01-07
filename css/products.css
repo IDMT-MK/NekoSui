@@ -22,6 +22,15 @@ header {
     width: 100%;
     z-index: 990;
 }
+.logo {
+  top: 30px;
+  position: fixed;
+  left: 20px;
+}
+.logo img{
+  width: 40%;
+  height: auto;
+}
 .spheader {
   display: block;
 }
@@ -30,13 +39,14 @@ header {
   z-index: 999;
   top:0;
   right: -120%;
-  width:100%;
+  width:30%;
   height: 100vh;
-  background:#fff;
+  background:#FF5812;
   transition: all 0.6s;
 }
 #spg-nav.panelactive{
   right: 0;
+  border-radius: 50px 0px 0px 50px;
 }
 #spg-nav.panelactive #spg-nav-list{
   position: fixed;
@@ -51,7 +61,7 @@ header {
   position: absolute;
   z-index: 999;
   top:50%;
-  left:50%;
+  left:15%;
   transform: translate(-50%,-50%);
 }
 #spg-nav li{
@@ -59,17 +69,16 @@ header {
   text-align: left;
 }
 #spg-nav li a{
-  color: #000;
+  color: #fff;
   text-decoration: none;
   padding:10px;
   display: block;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
   font-size: 25px;
   font-family: "Fredoka", sans-serif;
 }
 #spg-nav li a:hover{
-  color: #FF5812;
+  transform: scale(1.1);
   transition: 0.5s;
 }
 .openbtn{
@@ -106,12 +115,14 @@ header {
 }
 .openbtn.active {
   border: none;
+  background:#FF5812;
 }
 .openbtn.active span:nth-of-type(1) {
   top: 18px;
   left: 18px;
   transform: translateY(6px) rotate(-45deg);
   width: 30%;
+  background-color: #fff;
 }
 .openbtn.active span:nth-of-type(2) {
   opacity: 0;
@@ -121,6 +132,7 @@ header {
   left: 18px;
   transform: translateY(-6px) rotate(45deg);
   width: 30%;
+  background-color: #fff;
 }
 
 .product-inner {
@@ -165,7 +177,7 @@ header {
 }
 .item {
   display: grid;
-  gap: 20px;
+  gap: 80px 20px;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   margin: 50px 30px 0 30px;
@@ -181,6 +193,33 @@ header {
   height: auto;
 }
 .item li img:hover{
+  transform:scale(1.1);
+}
+.itemname {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.item2 {
+  display: grid;
+  gap: 80px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 50px 30px 0 30px;
+}
+.item2 li a {
+  position:relative;
+}
+.item2 li img {
+  transition:0.3s;
+  display:block;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+.item2 li img:hover{
   transform:scale(1.1);
 }
 .itemname {
@@ -415,18 +454,41 @@ header {
   }
   
 @media screen and (max-width: 960px) {
+  #spg-nav{
+    width:40%;
+  }
+  #spg-nav ul {
+    left: 20%;
+}
+#spg-nav li a {
+  font-size: 20px;
+}
   .itemname {
     font-family: "Jost", sans-serif;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
+  .item2 .itemname {
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.guidance {
+  font-size: 14px;
+}
   .border span{
     margin: 70px 0;
   }
   .price {
     font-family: "Jost", sans-serif;
     font-size: 11px;
-    padding: 5px 0;
+    padding: 0px 0px 5px 0px;
+    border-radius: 60px;
+  }
+  .item2 .price {
+    font-family: "Jost", sans-serif;
+    font-size: 11px;
+    padding: 0px 0px 5px 0px;
     border-radius: 60px;
   }
   .price  span {
@@ -435,12 +497,28 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+  #spg-nav{
+    width:60%;
+  }
+  #spg-nav ul {
+    left: 30%;
+  }
   .item {
     grid-template-columns: repeat(2, 1fr); /* 600px以下の画面で2列に変更 */
     gap: 10px;
     margin: 30px 30px 0 30px;
   }
+  .item2 {
+    grid-template-columns: repeat(2, 1fr); /* 600px以下の画面で2列に変更 */
+    gap: 10px;
+    margin: 30px 30px 0 30px;
+  }
   .item li img {
+    max-width: 220px;
+    width: 85%;
+    height: auto;
+  }
+  .item2 li img {
     max-width: 220px;
     width: 100%;
     height: auto;

@@ -6,20 +6,15 @@
     <link rel="stylesheet" href="css/modal.css">
     <meta charset="utf-8">
     <title>NEKOSUI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
   </head>
-
   <body>
-
     <div id="loading">
       <div class="wrapper">
         <div class="circle"></div>
@@ -31,7 +26,6 @@
         <span>Loading</span>
       </div>
     </div>
-
     <div class="bg_onetime_popup">
       <div class="onetime_popup">
           <span class="onetime_popup_title_close"></span>
@@ -46,35 +40,31 @@
           </div>
       </div>
   </div>
-  
-
-   <header>
-    <div class="spheader">
-    <div class="openbtn"><span></span><span></span><span></span></div>
-      <nav id="spg-nav">
-        <div id="spg-nav-list">
-          <ul>
-            <li><a href="index.html">TOP</a></li> 
-            <li><a href="about.html">ABOUT</a></li> 
-            <li><a href="products.html">PRODUCT</a></li> 
-            <li><a href="plan.html">SUBSCRIPTION PLAN</a></li>
-            <li><a href="q&a.html">Q&A</a></li>
-            <li><a href="contact.html">CONTACT</a></li> 
-          </ul>
-        </div>
-      </nav>
-    </div>
-   </header>
-
-   <div class="main">
+  <header>
+  <div class="spheader">
+    <div class="toplogo"><img src="images/logo.png"></div>
+  <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="spg-nav">
+      <div id="spg-nav-list">
+        <ul>
+          <li><a href="index.html">TOP</a></li> 
+          <li><a href="about.html">ABOUT</a></li> 
+          <li><a href="products.html">PRODUCT</a></li> 
+          <li><a href="plan.html">SUBSCRIPTION</a></li>
+          <li><a href="q&a.html">Q&A</a></li>
+          <li><a href="contact.html">CONTACT</a></li> 
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </header>
+  <div class="main">
     <div class="catimg">
-      <div class="main-img1"><img src="images/jp1.png"></div>
-      <div class="main-img2"><img src="images/sc1.png"></div>
+      <div class="main-img1"><img src="images/jc1.png"></div>
+      <div class="main-img2"><img src="images/sf1.png"></div>
     </div>
     <div class="maintitle"><img src="images/maintitle.png"></div>
   </div>
-
-
   <div id="about">
     <div class="aboutbox">
       <div class="box7"><div class="title"><span>私たちの香水ブランドへ<br class="brsp">ようこそ</span></div></div>
@@ -90,7 +80,6 @@
       </div>
     </div>
   </div>
-
   <div id="catfoto">
     <div class="box3">
       <img class="fot1" src="images/foto1.png">
@@ -102,21 +91,15 @@
     </div>
     </div>
   </div>
-
   <h4 class="pt-title">NEKOSUIの効果</h4>
-
     <div class="point">
-        <!-- model-viewer 要素 -->
       <model-viewer 
       id="myModel" 
       src="3d/japanesecat1.glb" 
       alt="3D model" 
-      autoplay
-      exposure="0.7"
-      auto-rotate auto-rotate-delay="1000"
-      auto-rotate rotation-per-second="500%">
+      loading="lazy"
+      exposure="0.7">
       </model-viewer>
-
       <div class="point-inner">
         <div class="pointimg">
           <div>
@@ -131,11 +114,6 @@
       </div>
     </div>
   </div>
-
-    <!-- <div id="main_canvas">
-    <canvas id="myCanvas"></canvas>
-  </div> -->
-
   <div id="products">
       <div class="ilst">
     <img src="images/catilst.png">
@@ -151,10 +129,16 @@
                   <img src="images/pr-mc1.png">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/pr-sc1.png">
+                  <img src="images/pr-sf1.png">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/pr-jp1.png">
+                  <img src="images/pr-jc1.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/pr-as1.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/pr-nc1.png">
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -164,12 +148,14 @@
             <div class="fragrance-ditail">
               <h4>Fragrance Ball</h4>
               <p>「猫の香りが持ち運べる」アロマ雑貨です。<br>
-                  3種類の猫の香りを展開しており、いつでもどこでも飼い猫の匂いを楽しみ、癒されることができます。<br>
+                  5種類の猫の香りを展開しており、いつでもどこでも飼い猫の匂いを楽しみ、癒されることができます。<br>
               </p>
               <div class="ditail-img">
                 <div class="grid"><img src="images/prmi-mc1.png"></div>
-                <div class="grid"><img src="images/prmi-sc1.png"></div>
+                <div class="grid"><img src="images/prmi-sf1.png"></div>
                 <div class="grid"><img src="images/prmi-jc1.png"></div>
+                <div class="grid"><img src="images/prmi-as1.png"></div>
+                <div class="grid"><img src="images/prmi-nc1.png"></div>
               </div>
               <div class="products-btn">
                 <a href="products.html">VIEW MORE</a>
@@ -190,10 +176,16 @@
                   <img src="images/pr-mc2.png" class="aligncenter">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/pr-sc2.png" class="aligncenter">
+                  <img src="images/pr-sf2.png" class="aligncenter">
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/pr-jp2.png" class="aligncenter">
+                  <img src="images/pr-jc2.png" class="aligncenter">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/pr-as2.png" class="aligncenter">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/pr-nc2.png" class="aligncenter">
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -203,12 +195,14 @@
               <div class="fragrance-ditail">
                 <h4>Perfume</h4>
                 <p>「猫の香りがする練り香水です。<br>
-                    3種類の猫の香りを展開しており、時間が経っても香りが変化せず最後まで楽しむことができます。<br>
+                    5種類の猫の香りを展開しており、時間が経っても香りが変化せず最後まで楽しむことができます。<br>
                 </p>
                 <div class="ditail-img">
                   <div class="grid"><img src="images/prmi-mc2.png" class="aligncenter2"></div>
-                  <div class="grid"><img src="images/prmi-sc2.png" class="aligncenter2"></div>
+                  <div class="grid"><img src="images/prmi-sf2.png" class="aligncenter2"></div>
                   <div class="grid"><img src="images/prmi-jc2.png" class="aligncenter2"></div>
+                  <div class="grid"><img src="images/prmi-as2.png" class="aligncenter2"></div>
+                  <div class="grid"><img src="images/prmi-nc2.png" class="aligncenter2"></div>
                 </div>
                 <div class="products-btn">
                   <a href="products.html">VIEW MORE</a>
@@ -244,7 +238,6 @@
       </ul>
     </div>
   </div>
-
   <div id="feature">
     <div class="box4">
       <div class="ft-inner">
@@ -290,8 +283,6 @@
       </div>
     </div>
   </div>
-
-  
   <div id="q-a">
     <div class="q-ainner">
         <h2 class="q-atitle">Q&A</h2>
@@ -328,9 +319,6 @@
         </div>
     </div>
   </div>
-      
-
-
   <footer>
     <div class="footer-inner">
       <div class="contact">
@@ -346,7 +334,6 @@
           </div>
         </div>
       </div>
-
       <div class="footer-nav">
         <div class="nav-title2">NEKOSUI</div>
         <div class="footer-list">
@@ -360,16 +347,15 @@
             <li><a href="plan.html">SUBSCRIPTION</a></li>
             <li><a href="q&a.html">Q&A</a></li>
           </ul>
-          <div class="sns">
+          <!-- <div class="sns">
             <a href=""><p class="x">X</p></a>
             <a href=""><p class="insta">Instagram</p></a>
-          </div>
+          </div> -->
         </div>
         <div class="nav-title1">NEKOSUI</div>
       </div>
     </div>
   </footer>
-
   <div class="copylight">
     <p>© 2024 Miko Idemitsu</p>
   </div>
@@ -378,85 +364,113 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
-
-  <!-- <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://unpkg.com/three@0.142.0/examples/js/loaders/GLTFLoader.js"></script> -->
   <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@latest/dist/model-viewer.js"></script>
-
   <script src="js/test.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script src="js/brender.js"></script>
   <script src="js/loading.js"></script>
   <script src="js/gsap.js"></script>
   <script src="js/modal.js"></script>
 
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "flip",
-      grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "flip",
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 <script>
   // 3Dモデルの要素を取得
   const modelViewer = document.getElementById('myModel');
   const point = document.querySelector('.point');
-  
+  // 自動回転を制御するための変数
+  let isAutoRotating = false;
+  let rotateAngle = 0;
+  const rotateSpeed = 1; // 回転速度（1度ずつ）
+  // 自動回転のための関数
+  const autoRotateModel = () => {
+    if (!isAutoRotating) return; // 自動回転が必要な場合のみ回転開始
+    rotateAngle += rotateSpeed;
+    if (rotateAngle >= 360) rotateAngle = 0; // 360度を超えたら0度に戻す
+    modelViewer.orientation = `0deg 0deg ${rotateAngle}deg`; // 回転を設定
+    requestAnimationFrame(autoRotateModel); // 再帰的に呼び出して連続回転を実現
+  };
   // スクロールイベントで3DモデルをY軸方向に動かす関数
   const onScroll = () => {
     const scrollY = window.scrollY; // 現在のスクロール位置
     const pointTop = point.offsetTop; // .pointの上端位置
     const pointHeight = point.offsetHeight; // .pointの高さ
     const pointBottom = pointTop + pointHeight; // .pointの下端位置
-
     // 画面幅が960px以下ならアニメーションを無効にする
     if (window.innerWidth <= 960) {
       modelViewer.style.transform = ''; // 3Dモデルの位置をリセット
       return; // スクロール処理を終了
     }
-  
     // アニメーション開始位置: .pointの上端から100px上
-    const startScroll = pointTop - 100;
-  
+    const startScroll = pointTop - 300;
     // アニメーション終了位置: .pointの下端より500px上
-    const endScroll = pointBottom - 500; // 終了位置を少し上に設定
-  
+    const endScroll = pointBottom - 400; // 終了位置を少し上に設定
     // スクロールがアニメーション範囲内にある場合
     if (scrollY >= startScroll && scrollY <= endScroll) {
       // 現在のスクロール位置に基づいて移動距離を計算
       const progress = (scrollY - startScroll) / (endScroll - startScroll); // 0から1の範囲で進行度を計算
-      const moveDistance = progress * (pointHeight - 500); // .point内での移動量を計算
-  
+      const moveDistance = progress * (pointHeight - 400); // .point内での移動量を計算
+      const rotateAngle = progress * 360; // 0度から360度まで回転
+      // スケールは固定
+      const scale = 1.5; // スケールを1.5に固定
       // requestAnimationFrameを使ってブラウザの描画タイミングに合わせてアニメーション
       window.requestAnimationFrame(() => {
-        modelViewer.style.transform = `translateX(-50%) translateY(${moveDistance}px)`; // Y方向に移動
+        modelViewer.style.transform = `translateX(-50%) translateY(${moveDistance}px) scale(${scale})`;
+        modelViewer.orientation = `0deg 0deg ${rotateAngle}deg`;  // 回転を適用
       });
     } else if (scrollY < startScroll) {
       // スクロール位置が開始位置より前の場合は初期位置に戻す
       window.requestAnimationFrame(() => {
-        modelViewer.style.transform = `translateX(-50%) translateY(0px)`; // 初期位置に戻す
+        modelViewer.style.transform = `translateX(-50%) translateY(0px) scale(1.5)`; // 初期位置に戻す
       });
     } else if (scrollY > endScroll) {
       // スクロール位置が終了位置より後の場合は終了位置で固定
       window.requestAnimationFrame(() => {
-        modelViewer.style.transform = `translateX(-50%) translateY(${pointHeight - 500}px)`; // 終了位置で固定
+        modelViewer.style.transform = `translateX(-50%) translateY(${pointHeight - 400}px) scale(1.5)`; // 終了位置で固定
       });
     }
   };
-  
   // スクロールイベントを監視
   window.addEventListener('scroll', onScroll);
+  // 画面幅が960px以下の場合は自動回転を開始
+  const checkWindowWidth = () => {
+    if (window.innerWidth <= 960) {
+      // 自動回転を開始
+      if (!isAutoRotating) {
+        isAutoRotating = true;
+        autoRotateModel(); // 自動回転開始
+      }
+      modelViewer.style.transform = 'scale(1.3)';  // スケールを1.5に固定
+    } else {
+      // ウィンドウ幅が960pxより大きくなった場合、スクロールによる回転を再開
+      modelViewer.style.transform = 'scale(1.3)';  // スケールを1.5に固定
+      isAutoRotating = false; // 自動回転を停止
+    }
+  };
+  // 最初に画面サイズをチェック
+  checkWindowWidth();
+  // リサイズ時にも画面サイズをチェック
+  window.addEventListener('resize', checkWindowWidth);
+  // 3Dモデルのアニメーション進行状況に基づいて回転を制御
+  const animations = modelViewer.getAnimations();
+  if (animations.length > 0) {
+    trackAnimationProgress(animations[0], (progress) => {
+      modelViewer.orientation = `0deg 0deg ${progress * -360}deg`;
+    });
+  } else {
+    console.warn('No animations found on the model');
+  }
 </script>
-
   </body>
 </html>

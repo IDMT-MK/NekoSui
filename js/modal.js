@@ -6,7 +6,7 @@ $(document).ready(function() {
         $(".bg_onetime_popup").fadeIn();
 
         // クッキーにポップアップ表示済みを記録（ブラウザを閉じるまで有効）
-        $.cookie('popupDisplayed', 'true', { expires: 0, path: '/' });
+        $.cookie('popupDisplayed', 'true', { expires: 1, path: '/' });
     }
 
     // ポップアップの閉じるボタンがクリックされたとき

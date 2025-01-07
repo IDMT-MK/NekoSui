@@ -119,8 +119,8 @@ gsap.fromTo('.box8',
     {
         autoAlpha: 1,
         stagger: 0.5,
-        duration: 1, 
-        delay: 1.5,
+        duration: 0.5, 
+        delay: 0.5,
         y: 0,
         scrollTrigger: {
         trigger: '#about',
@@ -137,7 +137,7 @@ gsap.fromTo('.box9',
         autoAlpha: 1,
         stagger: 0.5,
         duration: 1, 
-        delay: 3,
+        delay: 1,
         y: 0,
         scrollTrigger: {
         trigger: '#about',
@@ -183,6 +183,19 @@ const img_hover = gsap.timeline({paused: true})
     duration: 1,
     ease: "power2.out",
 })
+gsap.fromTo('.toplogo img',
+    {
+        autoAlpha: 0, 
+    },
+    {
+        autoAlpha: 1,
+        scrollTrigger: {
+        trigger: '#about',
+        start: 'top center',
+        markers: false,
+        scrub:true,
+    }
+});
 
 gsap.fromTo('.pirammido',
     {
@@ -247,9 +260,6 @@ gsap.fromTo('.girl2',
         markers: false,
     }
 });
-
-
-
 const paragraph = document.querySelector(".js-text");
 const textContent = paragraph.textContent;
 const newTextContent = [...textContent]

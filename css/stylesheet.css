@@ -4,11 +4,9 @@
     list-style: none;
     text-decoration: none;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     background-color: #FFF9F0;
     margin: 0;
@@ -16,13 +14,11 @@ body {
     height: 100%; 
     width: 100%;
 }
-
 #container {
     position: relative;
     width: 100%;
     height: 100%;
 }
-
 header {
     display: grid;
     align-items: center;
@@ -30,23 +26,15 @@ header {
     width: 100%;
     z-index: 990;
 }
-
-/* #main_canvas {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    overflow: hidden;
-} */
-/* #myCanvas {
-    display: block;
-    max-width: 100%;
-    max-height: 100vh;
-    width: 100%;
+.toplogo {
+    top: 30px;
+    position: fixed;
+    left: 20px;
+}
+.toplogo img{
+    width: 40%;
     height: auto;
-    margin: 0 auto;
-    object-fit: cover;
-}  */
-
+}
 .main{
     width:100%;
     height: calc(100% - 10px);
@@ -82,7 +70,6 @@ img {
     display: flex;
     margin: 0 auto;
 }
-
 .spheader {
     display: block;
 }
@@ -91,13 +78,14 @@ img {
     z-index: 999;
     top:0;
     right: -120%;
-    width:100%;
+    width:30%;
     height: 100vh;
-    background:#fff;
+    background:#FF5812;
     transition: all 0.6s;
 }
 #spg-nav.panelactive{
     right: 0;
+    border-radius: 50px 0px 0px 50px;
 }
 #spg-nav.panelactive #spg-nav-list{
     position: fixed;
@@ -112,7 +100,7 @@ img {
     position: absolute;
     z-index: 999;
     top:50%;
-    left:50%;
+    left:15%;
     transform: translate(-50%,-50%);
 }
 #spg-nav li{
@@ -120,17 +108,16 @@ img {
     text-align: left;
 }
 #spg-nav li a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding:10px;
     display: block;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
     font-size: 25px;
     font-family: "Fredoka", sans-serif;
 }
 #spg-nav li a:hover{
-    color: #FF5812;
+    transform: scale(1.1);
     transition: 0.5s;
 }
 .openbtn{
@@ -163,16 +150,18 @@ img {
     top:29px;
 }
 .openbtn span:nth-of-type(3) {
-    top:37px;
+top:37px;
 }
 .openbtn.active {
     border: none;
+    background:#FF5812;
 }
 .openbtn.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
     width: 30%;
+    background-color: #fff;
 }
 .openbtn.active span:nth-of-type(2) {
     opacity: 0;
@@ -182,14 +171,14 @@ img {
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
+    background-color: #fff;
 }
-
 #about {
     width: 100%;
     height: auto;
 }
 .title {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Zen Maru Gothic", serif;
     font-size: 40px;
     font-weight: bold;
     color: #FF5812;
@@ -274,8 +263,6 @@ img {
     width: 100%;
     z-index: -1;
 }
-
-
 #catfoto {
     position: relative;
 }
@@ -291,7 +278,8 @@ img {
     left: 50px;
 }
 .cat-textbox h4{
-    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;
+    font-family: "Zen Maru Gothic", serif;
     font-size: clamp(1.563rem, 0.792rem + 3.29vw, 3.75rem);
     color: #fff;
 }
@@ -300,7 +288,6 @@ img {
     font-size: clamp(1.063rem, 0.996rem + 0.28vw, 1.25rem);
     color: #fff;
 }
-
 model-viewer {
     width: 100vw;
     height: 100vw;
@@ -308,14 +295,12 @@ model-viewer {
     max-height: 500px;
     transform-origin: center center;
     position: absolute;
-    top: 0; /* 親要素内の上端に配置 */
+    top: 90px; /* 親要素内の上端に配置 */
     left: 50%;
     transform: translateX(-50%); /* 中央寄せ */
     z-index: 2; /* 3Dモデルを上に表示 */
     will-change: transform;
 }
-
-
 .point {
     position: relative;
     display: flex;
@@ -334,7 +319,7 @@ model-viewer {
     margin-bottom: 60px;
 }
 .point-inner  {
-    margin: 500px 0;
+    margin: 700px 0;
 }
 .pointimg {
     margin: 0 20px;
@@ -348,7 +333,6 @@ model-viewer {
     margin-top: 200px;
     margin-bottom: 60px;
 }
-
 #products {
     position: relative;
     background-color: #FF5812;
@@ -374,19 +358,22 @@ model-viewer {
 .fragrance {
     display: flex;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px 150px 20px;
+    gap: 20px;
 }
 .perfume {
     display: flex;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    gap: 20px;
 }
 .swiper {
-    width: 500px;
+    margin-left: 0;
+    width: 650px;
     height: auto;
 }
 .swiper-slide {
@@ -442,7 +429,7 @@ model-viewer {
     font-size: 17px;
     font-family: "Noto Sans", sans-serif;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .ditail-img {
     display: grid;
@@ -450,16 +437,27 @@ model-viewer {
     width: 400px;
     gap: 20px;
 }
+.grid {
+    width: 100%;
+    height: auto;
+}
 .products-btn {
     margin-top: 60px;
+    position: relative;
 }
 .products-btn a{
     font-family: "Fredoka", sans-serif;
     color: #FF5812;
+    font-size: 20px;
     background-color: #fff;
     border-radius: 45px;
     padding: 13px 71px;
     margin-top: 60px;
+}
+.products-btn a:hover {
+    transform:scale(1.1);
+    transition: 0.7s;
+    opacity: 0.5;
 }
 .bbs{
     align-items: center;
@@ -529,8 +527,6 @@ model-viewer {
     width: 102px;
     height: auto;
 }
-
-
 #plan {
     background-color: #FF5812;
     padding: 50px 0;
@@ -562,7 +558,6 @@ model-viewer {
 .plan-inner .plan-button .about-button a{
     margin: 0;
 }
-
 #q-a {
     display: block;
 }
@@ -666,7 +661,6 @@ model-viewer {
     margin-bottom: 20px;
     letter-spacing: 3px;
 }
-
 .footer-inner {
     width: 100%;
     justify-content: space-between;
@@ -766,15 +760,66 @@ model-viewer {
 .nav-title2 {
     display: none;
 }
-
 .copylight {
     font-family: "Noto Sans", sans-serif;
     text-align: center;
     padding: 20px 0;
 }
-
-
 @media screen and (max-width: 1060px) { 
+.fragrance {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 50px;
+}
+.fragrance-ditail h4 {
+    font-size: 35px;
+}
+.fragrance-ditail p {
+    font-size: 14px;
+}
+.perfume {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 50px;
+}
+.fragrance-ditail{
+    padding-top: 130px;
+    margin: 0 auto;
+}
+.swiper .swiper-pagination {
+    margin-bottom: -95px;
+}
+.products-btn {
+    display: none;
+}
+.products-btn2first{
+    padding-bottom: 100px;
+    display: block;
+    margin-top: -200px;
+    justify-content: center;
+    text-align: center;
+}
+.products-btn2first a{
+    color: #FF5812;
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 13px 71px;
+    margin-top: 60px;
+}
+.products-btn2secound {
+    display: block;
+    padding-top: 100px;
+    margin-top: -150px;
+    justify-content: center;
+    text-align: center;
+}
+.products-btn2secound a{
+    color: #FF5812;
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 13px 71px;
+    margin-top: 60px;
+}
 .footer-inner {
     display: block;
     padding-bottom: 50px;
@@ -817,19 +862,31 @@ model-viewer {
     margin-left: 10%;
 }
 }
-
 @media screen and (max-width: 960px) {
+#spg-nav{
+    width:40%;
+}
+#spg-nav ul {
+    left: 20%;
+}
+#spg-nav li a {
+    font-size: 20px;
+}
 .maintitle {
     top: 50px;
+}
+model-viewer {
+    top: 0px;
+}
+.point-inner  {
+    margin: 500px 0;
 }
 .brsp {
     display: block;
 }
-
 .text {
     margin-left: 15%;
 }
-
 .pointimg {
     display: block;
 }
@@ -843,64 +900,6 @@ model-viewer {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.fragrance {
-    display: grid;
-    grid-template-rows: 40% 60%;
-    gap: 50px;
-}
-.fragrance-ditail h4 {
-    font-size: 35px;
-}
-.fragrance-ditail p {
-    font-size: 14px;
-}
-.perfume {
-    display: grid;
-    grid-template-rows: 40% 60%;
-    gap: 50px;
-}
-.fragrance-ditail{
-    grid-row:1/2;
-    margin: 0 auto;
-}
-
-.swiper .swiper-pagination {
-    margin-bottom: 65px;
-}
-
-.products-btn {
-    display: none;
-}
-.products-btn2first{
-    padding-bottom: 100px;
-    display: block;
-    margin-top: -60px;
-    justify-content: center;
-    text-align: center;
-}
-.products-btn2first a{
-    color: #FF5812;
-    background-color: #fff;
-    border-radius: 45px;
-    padding: 13px 71px;
-    margin-top: 60px;
-}
-.products-btn2secound {
-    display: block;
-    padding-top: 100px;
-    margin-top: -50px;
-    justify-content: center;
-    text-align: center;
-}
-.products-btn2secound a{
-    color: #FF5812;
-    background-color: #fff;
-    border-radius: 45px;
-    padding: 13px 71px;
-    margin-top: 60px;
-}
-
 .plan-inner {
     display: block;
     text-align: center;
@@ -916,21 +915,44 @@ model-viewer {
 .plan-inner .plan-button .about-button a{
     margin: 0 auto;
 }
-
+.plan-inner div p {
+    font-size: 17px;
+}
 .qatext-box {
     text-align: left;
     display: inline-block;
     margin-left: -10%;
 }
-
 }
-
 @media screen and (max-width: 600px) {
+#spg-nav{
+    width:60%;
+}
+#spg-nav ul {
+    left: 30%;
+}
 .maintitle {
     top: 50px;
 }
 .brsp {
     display: block;
+}
+.swiper {
+    width: 500px;
+    height: auto;
+}
+.fragrance-ditail{
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.products-btn2first {
+    margin-top: -150px;
+}
+.products-btn2secound {
+    margin-top: -100px;
+}
+.swiper .swiper-pagination {
+    margin-bottom: -50px;
 }
 
 .title {
@@ -939,7 +961,6 @@ model-viewer {
 .text {
     margin-left: 15%;
 }
-
 .aboutbox p {
     text-align: start;
     font-size: 14px;
@@ -949,7 +970,6 @@ model-viewer {
     font-size: 11px;
     text-align: start;
 }
-
 .fot1 {
     display: none;
 }
@@ -964,7 +984,6 @@ model-viewer {
     transform: translateX(-50%);
     text-align: center;
 }
-
 .point-inner {
     margin-bottom: 200px;
 }
@@ -980,11 +999,9 @@ model-viewer {
     margin: 0 auto;
     top: -200px;
 }
-
 #products {
     margin-top: 100px;
 }
-
 .summary {
     font-size: 16px;
 }
@@ -994,23 +1011,24 @@ model-viewer {
 .details-content:first-letter {
     font-size: 16px;
 }
-
-
 .ft-inner {
     display: block;
 }
 .f1:first-of-type{
     padding-bottom: 80px;
 }
-
 }
-
+@media screen and (max-width: 500px) {
+    .swiper {
+        width: 400px;
+        height: auto;
+    }
+}
 @media screen and (max-width: 450px) {
     .openbtn {
         top: 20px;
         right: 20px;
-      }
-
+    }
     .swiper {
         margin-top: 50px;
         width: 280px;
@@ -1018,16 +1036,20 @@ model-viewer {
     .swiper .swiper-button-next, .swiper .swiper-button-prev {
         width: 30px;
         height: 30px;
-        margin-top: -25%;
+        margin-top: -5%;
     }
     .swiper .swiper-button-next::after, .swiper .swiper-button-prev::after {
         font-size: 1rem;
     }
     .swiper .swiper-pagination {
-        margin-bottom: 102px;
+        margin-bottom: 0px;
     }
     .fragrance {
         padding: 0 20px 100px 20px;
+    }
+    .fragrance-ditail{
+        padding-top: 0px;
+        margin: 0 auto;
     }
     .fragrance-ditail h4 {
         font-size: 35px;
@@ -1036,6 +1058,12 @@ model-viewer {
     .fragrance-ditail p {
         margin-bottom: 30px;
         font-size: 14px;
+    }
+    .products-btn2first {
+        margin-top: -30px;
+    }
+    .products-btn2secound {
+        margin-top: -30px;
     }
     .ditail-img {
         width: 350px;
@@ -1046,7 +1074,6 @@ model-viewer {
     .bbs {
         margin-top: 80px;
     }
-
     #feature {
         padding: 100px 15px;
     }

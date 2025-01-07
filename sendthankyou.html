@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="css/thankyou.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
+    <body>
+
+    <div id="loading">
+        <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Loading</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="spheader">
+        <div class="logo"><img src="images/logo.png"></div>
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="spg-nav">
+            <div id="spg-nav-list">
+            <ul>
+                <li><a href="index.html">TOP</a></li> 
+                <li><a href="about.html">ABOUT</a></li> 
+                <li><a href="products.html">PRODUCT</a></li> 
+                <li><a href="plan.html">SUBSCRIPTION</a></li>
+                <li><a href="q&a.html">Q&A</a></li>
+                <li><a href="contact.html">CONTACT</a></li> 
+            </ul>
+            </div>
+        </nav>
+        </div>
+        </header>
+
+        <div id="thankyou">
+            <h4>お問い合わせありがとうございます！</h4>
+            <div class="thankyou-text">
+                お問い合わせフォームはイタズラ防止のため、実際にフォームに送ることを出来なくしています。<br>
+                ここまで見ていただき、ありがとうございます！<br>
+                引き続きサイトをお楽しみ下さい。
+            </div>
+            <div class="top-button">
+                <a href="index.html">PAGE TOP</a>
+            </div>
+        </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="contact">
+            <div class="contact-inner">
+                <div class="contacttext-box">
+                <div class="contact-title">CONTACT</div>
+                <div class="contact-text">お問い合わせはこちらから</div>
+                </div>
+                <div class="contact-button">
+                <a href="contact.html">CONTACT US</a>
+                </div>
+            </div>
+            </div>
+    
+            <div class="footer-nav">
+            <div class="nav-title2">NEKOSUI</div>
+            <div class="footer-list">
+                <ul>
+                <li><a href="index.html">TOP</a></li> 
+                <li><a href="about.html">ABOUT</a></li> 
+                <li><a href="#product">PRODUCT</a>
+                    <a href="products.html"><p class="p1">Fragrance Ball</p></a>
+                    <a href="products.html"><p class="p2">Perfume</p></a>
+                </li> 
+                <li><a href="plan.html">SUBSCRIPTION</a></li>
+                <li><a href="q&a.html">Q&A</a></li>
+                </ul>
+                <!-- <div class="sns">
+                <a href=""><p class="x">X</p></a>
+                <a href=""><p class="insta">Instagram</p></a>
+                </div> -->
+            </div>
+            <div class="nav-title1">NEKOSUI</div>
+            </div>
+        </div>
+        </footer>
+        <div class="copylight">
+            <p>© 2024 Miko Idemitsu</p>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/loading.js"></script>
+
+    <script>
+        setTimeout(function() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.4 }
+            });
+        }, 2000);
+        </script>
+</html>
